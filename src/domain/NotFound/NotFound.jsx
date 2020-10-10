@@ -4,7 +4,7 @@ import {
   Button, Col, Container, Row,
 } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import logo from '../../assets/img/logo-white.png';
+import logo from '../../assets/img/logo-mobile.png';
 import blob3 from '../../assets/img/decorations/deco-blob-3.svg';
 import lines3 from '../../assets/img/decorations/deco-lines-3.svg';
 import blob9 from '../../assets/img/decorations/deco-blob-9.svg';

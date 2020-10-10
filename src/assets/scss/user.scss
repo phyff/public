@@ -23,6 +23,8 @@
 }
 
 .film-primary{
+  border-radius: 0;
+
   &:before{
     content: '';
     display: block;

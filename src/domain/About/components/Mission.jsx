@@ -1,12 +1,12 @@
 import React from 'react';
-import people from '../../../assets/img/portfolio-single-8.jpg';
+import thomasInterview from '../../../assets/img/content/thomas-interview.jpg';
 
 const Mission = () => (
   <section>
     <div className="container">
       <div className="row align-items-center justify-content-around">
         <div className="col-md-5 col-xl-6 mb-4 mb-md-0">
-          <img src={people} className="rounded shadow-3d" />
+          <img src={thomasInterview} style={{ width: '70%' }} alt="Mission" className="rounded shadow-3d" />
         </div>
         <div className="col-md-7 col-xl-6">
           <div className="row justify-content-center">
