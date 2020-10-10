@@ -14059,16 +14059,18 @@ article table {
   left: auto;
   right: -0.75rem; }
 
-.film-primary:before {
-  content: '';
-  display: block;
-  width: 101%;
-  height: 92.5%;
-  border-top: 1em dashed #2A2A72;
-  border-bottom: 1.3em dashed #2A2A72;
-  position: absolute;
-  left: -.5%;
-  top: auto;
-  z-index: -1; }
+.film-primary {
+  border-radius: 0; }
+  .film-primary:before {
+    content: '';
+    display: block;
+    width: 101%;
+    height: 92.5%;
+    border-top: 1em dashed #2A2A72;
+    border-bottom: 1.3em dashed #2A2A72;
+    position: absolute;
+    left: -.5%;
+    top: auto;
+    z-index: -1; }
 
 /*# sourceMappingURL=theme-event.css.map */

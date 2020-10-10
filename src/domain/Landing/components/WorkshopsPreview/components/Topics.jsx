@@ -34,15 +34,13 @@ const Topics = ({ workshops, count }) => {
                 ['bg-primary', 'bg-primary-2', 'bg-primary-3'][index % 3]
               }`}
             >
-              {workshop.speaker.image
-                ? (
-                  <img
-                    className="icon-round mb-3 mb-md-4 icon bg-primary layer-2"
-                    src={workshop.speaker.image}
-                    alt={workshop.speaker.name}
-                  />
-                )
-                : <Svg src={profile} />}
+              {workshop.speaker.image && (
+                <img
+                  className="icon-round mb-3 mb-md-4 icon bg-primary layer-2"
+                  src={workshop.speaker.image}
+                  alt={workshop.speaker.name}
+                />
+              )}
               <h5 className="mb-0 layer-2">{workshop.title}</h5>
               <img className="bg-image opacity-50" src={workshop.image ?? getBackgroundImage(index)} alt={workshop.title} />
             </Link>
