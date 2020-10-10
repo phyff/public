@@ -1,0 +1,38 @@
+//
+//
+// user.scss
+//
+// Place your own custom CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
+
+.pricing-ticket-primary{
+  &:before, &:after{
+    content: '';
+    display: block;
+    width: $spacer;
+    height: $spacer;
+    border-radius: 50%;
+    background: $primary;
+    flex-shrink: 0;
+    position: absolute;
+    left: -$spacer/2;
+  }
+  &:after{
+    left: auto;
+    right: -$spacer/2;
+  }
+}
+
+.film-primary{
+  &:before{
+    content: '';
+    display: block;
+    width: 101%;
+    height: 92.5%;
+    border-top: 1em dashed $primary;
+    border-bottom: 1.3em dashed $primary;
+    position: absolute;
+    left: -.5%;
+    top: auto;
+    z-index: -1;
+  }
+}
