@@ -20,14 +20,14 @@ const Header = ({ data }) => (
     </Container>
     <div className="decoration-wrapper">
       <div className="decoration middle-y right d-none d-xl-block" data-jarallax-element="50 50">
-        <Svg src={blob} className="bg-primary-3" />
+        <Svg src={blob} className={data.decoColors?.blob ?? 'bg-primary-3'} />
       </div>
       <div className="decoration middle-y right scale-2 d-none d-lg-block" data-jarallax-element="100">
-        <Svg src={dots} className="bg-primary-2" />
+        <Svg src={dots} className={data.decoColors?.dots ?? 'bg-primary-2'} />
       </div>
     </div>
     <div className="divider layer-1">
-      <Svg src={divider} className="bg-white" />
+      <Svg src={divider} className={data.dividerColor ?? 'bg-white'} />
     </div>
   </section>
 );
@@ -38,6 +38,11 @@ Header.propTypes = {
     caption: PropTypes.string,
     image: PropTypes.string,
     color: PropTypes.string,
+    dividerColor: PropTypes.string,
+    decoColors: PropTypes.shape({
+      blob: PropTypes.string,
+      dots: PropTypes.string,
+    }),
   }),
 };
 

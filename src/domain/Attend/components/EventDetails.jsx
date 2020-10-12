@@ -1,0 +1,152 @@
+import React from 'react';
+import {
+  Card, Col, Container, Row,
+} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import moment from 'moment';
+import Svg from '../../../components/Svg';
+import clock from '../../../assets/img/icons/theme/home/clock.svg';
+import earth from '../../../assets/img/icons/theme/home/earth.svg';
+import user from '../../../assets/img/icons/theme/general/user.svg';
+import question from '../../../assets/img/icons/theme/code/question-circle.svg';
+import dots3 from '../../../assets/img/decorations/deco-dots-2.svg';
+import blob13 from '../../../assets/img/decorations/deco-blob-13.svg';
+import blob2 from '../../../assets/img/decorations/deco-blob-2.svg';
+import divider from '../../../assets/img/dividers/divider-3.svg';
+
+const EventDetails = () => {
+  const date = new Date(2020, 2, 27);
+  const googleForm = 'https://docs.google.com/forms/d/e/1FAIpQLSect6WaIg_HzpZsGeRNvX7F1uDDEVeJE8vwVixxYy160c91hw/viewform';
+
+  return (
+    <section className="bg-primary has-divider">
+      <Container>
+        <Row className="justify-content-center">
+          <Col lg={10} md={12}>
+            <Row className="justify-content-center layer-2">
+              <Col md={5} sm={10} className="mb-3">
+                <div
+                  className="card card-icon-3 card-body h-100 justify-content-between"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <div className="icon-round mb-3 mb-md-4 bg-primary-2">
+                    <Svg
+                      className="icon icon-lg bg-primary-2"
+                      src={user}
+                      alt="user"
+                    />
+                  </div>
+                  <h4>Who?</h4>
+                  <p>
+                    You! The Fest is free and open to all high-school students.
+                    Whether you make films or just like watching them we&apos;d love
+                    to see you at the Fest. Submissions are open to high schoolers,
+                    14 to 19 years of age.
+                  </p>
+                </div>
+              </Col>
+              <Col md={5} sm={10} className="mb-3">
+                <div
+                  className="card card-icon-3 card-body h-100 justify-content-between"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div className="icon-round mb-3 mb-md-4 bg-primary-2">
+                    <Svg
+                      className="icon icon-lg bg-primary-2"
+                      src={question}
+                      alt="question"
+                    />
+                  </div>
+                  <h4>What?</h4>
+                  <p>
+                    The Fest features a keynote speaker, workshops with local professionals,
+                    and screenings/awards for the best submissions! The Fest is a great
+                    opportunity to make connections or just chat with local filmmakers and
+                    similarly passionate students.
+                  </p>
+                </div>
+              </Col>
+              <Col md={5} sm={10} className="mb-3">
+                <div
+                  className="card card-icon-3 card-body h-100 justify-content-between"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div className="icon-round mb-3 mb-md-4 bg-primary-2">
+                    <Svg
+                      className="icon icon-lg bg-primary-2"
+                      src={clock}
+                      alt="clock"
+                    />
+                  </div>
+                  <h4>When?</h4>
+                  <p>
+                    The Fest will take place on&nbsp;
+                    <strong>{moment(date).format('dddd, MMMM Do YYYY')}</strong>&nbsp;
+                    from&nbsp;
+                    <strong>12:00 pm to 6:00 pm.</strong>&nbsp;
+                    You can arrive and leave at any time. We
+                    recommend staying for the entire event; there are workshops and screenings
+                    scheduled throughout the day!
+                  </p>
+                </div>
+              </Col>
+              <Col md={5} sm={10} className="mb-3">
+                <div
+                  className="card card-icon-3 card-body h-100 justify-content-between"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <div className="icon-round mb-3 mb-md-4 bg-primary-2">
+                    <Svg
+                      className="icon icon-lg bg-primary-2"
+                      src={earth}
+                      alt="earth"
+                    />
+                  </div>
+                  <h4>Where?</h4>
+                  <p>
+                    The Fest is hosted on the campus of&nbsp;
+                    <Link to="https://goo.gl/maps/6ktWFaRjn5dEVfN37">Germantown Friends School</Link>,
+                    in the Sharpless building. There will be signs guiding you around campus on the
+                    day of the event.
+                  </p>
+                </div>
+              </Col>
+            </Row>
+            <div>
+              <div className="decoration top left scale-2 d-none d-md-block">
+                <Svg
+                  className="bg-primary-3"
+                  src={blob13}
+                  alt="deco-blob-13 decoration"
+                />
+              </div>
+              <div className="decoration bottom right scale-2 d-none d-md-block">
+                <Svg
+                  className="bg-primary-alt"
+                  src={blob2}
+                  alt="deco-blob-13 decoration"
+                />
+              </div>
+              <div className="decoration bottom right scale-2 d-none d-md-block">
+                <Svg
+                  className="bg-primary-2"
+                  src={dots3}
+                  alt="deco-dots-3 decoration"
+                />
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+      <div className="divider">
+        <Svg className="bg-white flip-x" src={divider} alt="divider graphic" />
+      </div>
+    </section>
+  );
+};
+
+export default EventDetails;

@@ -13,7 +13,7 @@ const Footer = () => {
   const submissionsOpen = true;
 
   return (
-    <footer className="pb-4 bg-primary-3 text-light" id="footer">
+    <footer className="pb-4 bg-primary-3 text-light layer-4" id="footer">
       <Container>
         <Row className="mb-5">
           <Col>

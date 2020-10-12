@@ -13,7 +13,14 @@ const Speakers = ({ workshops }) => (
     </Row>
     <Row>
       {workshops.map((workshop, index) => (
-        <Col sm={6} lg={4} className="d-flex align-items-center mb-5" data-aos="fade-up" data-aos-delay={index * 100}>
+        <Col
+          sm={6}
+          lg={4}
+          className="d-flex align-items-center mb-5"
+          data-aos="fade-up"
+          data-aos-delay={index * 100}
+          key={`wp-s-${workshop.title}`}
+        >
           <img src={workshop.speaker.image ?? profile} alt={workshop.speaker.name} className="avatar avatar-xlg mr-3" />
           <div>
             <h5 className="mb-0">{workshop.speaker.name}</h5>

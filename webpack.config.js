@@ -30,6 +30,10 @@ module.exports = (env) => ({
         ],
       },
       {
+        test: /\.mp4$/,
+        use: 'file-loader?name=videos/[name].[ext]',
+      },
+      {
         test: /\.s[ac]ss$/i,
         use: [{
           loader: 'style-loader', // creates style nodes from JS strings
@@ -41,6 +45,10 @@ module.exports = (env) => ({
         }, {
           loader: 'sass-loader', // compiles Sass to CSS
         }],
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader',
       },
     ],
   },

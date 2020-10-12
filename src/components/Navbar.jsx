@@ -19,7 +19,16 @@ const Navbar = () => {
       overlay: true,
       isDark: true,
     },
-  }[location.pathname];
+    '/submit': {
+      classNames: 'navbar navbar-expand-lg navbar-dark',
+      overlay: true,
+      isDark: true,
+    },
+  }[location.pathname] ?? {
+    classNames: 'navbar navbar-expand-lg navbar-dark',
+    overlay: true,
+    isDark: true,
+  };
 
   return (
     <div className="navbar-container">

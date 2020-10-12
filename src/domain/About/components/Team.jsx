@@ -33,7 +33,7 @@ const Team = () => {
         </Row>
         <Row className="row">
           {team.map((member) => (
-            <TeamMember member={member} />
+            <TeamMember member={member} key={member.name} />
           ))}
         </Row>
       </Container>

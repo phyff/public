@@ -1,7 +1,7 @@
 import React from 'react';
-import Splash from './components/Splash';
+import Splash from './components/Splash/Splash';
 import withBaseLayout from '../../hocs/withBaseLayout';
-import Explanation from './components/Explanation';
+import Explanation from './components/Explanation/Explanation';
 import WorkshopsPreview from './components/WorkshopsPreview/WorkshopsPreview';
 import Participate from './components/Participate';
 
