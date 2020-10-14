@@ -8,22 +8,25 @@
 // Color Scheme
 // Uncomment the variables below and change the hex values.
 
-// $primary:      #000;
-// $primary-2:     #000;
-// $primary-3:     #000;
+$primary:   #5B558E;
+$primary-2: #be7099;
+$primary-3: #25243b;
+$secondary-1: #2D4971;
 
 // Do not change or remove the $theme-color-scheme or $theme-colors maps below
 
 $theme-color-scheme: (
         "primary":    $primary,
         "primary-2":  $primary-2,
-        "primary-3":  $primary-3
+        "primary-3":  $primary-3,
+        "secondary-1": $secondary-1,
 );
 
 $theme-colors: (
         "primary":    $primary,
         "primary-2":  $primary-2,
         "primary-3":  $primary-3,
+        "secondary-1": $secondary-1,
 );
 
 // Export to make vars accessible in JSX
@@ -32,4 +35,5 @@ $theme-colors: (
   primary:      $primary;
   primary-2:    $primary-2;
   primary-3:    $primary-3;
+  secondary-1:  $secondary-1,
 }

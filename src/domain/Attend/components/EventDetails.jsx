@@ -16,13 +16,12 @@ import divider from '../../../assets/img/dividers/divider-3.svg';
 
 const EventDetails = () => {
   const date = new Date(2020, 2, 27);
-  const googleForm = 'https://docs.google.com/forms/d/e/1FAIpQLSect6WaIg_HzpZsGeRNvX7F1uDDEVeJE8vwVixxYy160c91hw/viewform';
 
   return (
     <section className="bg-primary has-divider">
       <Container>
         <Row className="justify-content-center">
-          <Col lg={10} md={12}>
+          <Col>
             <Row className="justify-content-center layer-2">
               <Col md={5} sm={10} className="mb-3">
                 <div

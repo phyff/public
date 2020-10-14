@@ -2,7 +2,9 @@ import React from 'react';
 import { ReactSVG } from 'react-svg';
 import PropTypes from 'prop-types';
 
-const Svg = ({ src, className, externalClassnames }) => (
+const Svg = ({
+  src, className, externalClassnames, ...props
+}) => (
   <ReactSVG
     src={src}
     beforeInjection={(svg) => {
@@ -13,6 +15,7 @@ const Svg = ({ src, className, externalClassnames }) => (
       }
     }}
     className={externalClassnames}
+    {...props}
   />
 );
 

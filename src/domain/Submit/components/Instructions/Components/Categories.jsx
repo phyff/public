@@ -1,5 +1,4 @@
 import { Col, Container, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import React from 'react';
 import categories from '../../../../../data/categories';
 import Svg from '../../../../../components/Svg';
@@ -16,7 +15,7 @@ const Categories = () => (
     </Row>
     <Row>
       {categories.map(({ title, description, icon }, index) => (
-        <Col md={6} className="d-flex" data-aos="fade-up" data-aos-delay={index * 100}>
+        <Col md={6} className="d-flex" data-aos="fade-up" data-aos-delay={index * 100} key={title}>
           <div className={`card card-icon-3 card-body justify-content-between text-light ${
             ['bg-primary', 'bg-primary-2', 'bg-primary-3'][index % 3]
           }`}

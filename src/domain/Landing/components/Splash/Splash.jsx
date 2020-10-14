@@ -5,7 +5,7 @@ import {
 import moment from 'moment';
 import { Link } from 'react-router-dom';
 import Svg from '../../../../components/Svg';
-import poster1 from '../../../../assets/img/content/phyff-poster-1.png';
+import poster1 from '../../../../assets/img/content/phyff-poster-1-flip-x.jpeg';
 import decoLines5 from '../../../../assets/img/decorations/deco-lines-5.svg';
 import decoBlob4 from '../../../../assets/img/decorations/deco-blob-4.svg';
 import decoDots1 from '../../../../assets/img/decorations/deco-dots-1.svg';
