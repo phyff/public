@@ -1,23 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router';
 import menu from '../assets/img/icons/interface/menu.svg';
-import cross from '../assets/img/icons/interface/cross.svg';
 import logoMobile from '../assets/img/logo-mobile.png';
 import navItems from '../data/navItems';
 import Svg from './Svg';
+import useScrollPosition from '../hooks/useScrollPosition';
 
 const BasicNavbar = () => {
+  const scrollPosition = useScrollPosition({ delay: 50 });
   const location = useLocation();
+
   const navSettings = {
     '/': {
-      classNames: 'navbar navbar-transparent',
+      classNames: 'navbar-transparent',
       overlay: true,
       isDark: true,
     },
   }[location.pathname] ?? {
-    classNames: 'navbar navbar-transparent',
+    classNames: 'navbar-transparent',
     overlay: true,
     isDark: true,
   };
@@ -25,9 +27,9 @@ const BasicNavbar = () => {
   return (
     <Navbar
       variant={navSettings.isDark ? 'dark' : 'light'}
+      fixed="top"
       expand="lg"
-      className="px-5"
-      data-overlay
+      className={`px-5 ${scrollPosition > 0 ? 'navbar-background' : 'navbar-transparent'}`}
     >
       <Navbar.Brand className="fade-page">
         <Link to="/">

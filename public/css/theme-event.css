@@ -14228,4 +14228,12 @@ article table {
     width: 100%;
     height: 100%; }
 
+.navbar {
+  transition: 0.35s; }
+
+.navbar-background {
+  background-color: #25243b;
+  border-bottom: 0;
+  transition: 0.35s; }
+
 /*# sourceMappingURL=theme-event.css.map */

@@ -5,16 +5,19 @@ import About from './domain/About/About';
 import NotFound from './domain/NotFound/NotFound';
 import Submit from './domain/Submit/Submit';
 import Attend from './domain/Attend/Attend';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => (
   <BrowserRouter>
-    <Switch>
-      <Route path="/" exact component={Landing} />
-      <Route path="/submit" exact component={Submit} />
-      <Route path="/about" exact component={About} />
-      <Route path="/attend" exact component={Attend} />
-      <Route component={NotFound} />
-    </Switch>
+    <ScrollToTop>
+      <Switch>
+        <Route path="/" exact component={Landing} />
+        <Route path="/submit" exact component={Submit} />
+        <Route path="/about" exact component={About} />
+        <Route path="/attend" exact component={Attend} />
+        <Route component={NotFound} />
+      </Switch>
+    </ScrollToTop>
   </BrowserRouter>
 );
 

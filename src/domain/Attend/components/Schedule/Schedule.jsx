@@ -2,13 +2,11 @@ import React from 'react';
 import {
   Container, Row, Col, ListGroup,
 } from 'react-bootstrap';
-// import workshops from '../../../../data/workshops';
+import workshops from '../../../../data/workshops';
 import ScheduleWorkshop from './ScheduleWorkshop';
 import Svg from '../../../../components/Svg';
 import dots3 from '../../../../assets/img/decorations/deco-dots-1.svg';
 import saas2 from '../../../../assets/img/saas-2.svg';
-
-const workshops = [];
 
 const Schedule = () => (
   <section id="schedule">
@@ -24,7 +22,7 @@ const Schedule = () => (
           </p>
         </Col>
       </Row>
-      <div className={`card card-body layer-2 ${workshops.length === 0 && 'hover-shadow-3d'}`}>
+      <div className={`card card-body layer-2 ${workshops.length === 0 && 'rotate-right shadow-3d'}`}>
         {workshops.length > 0
           ? (
             <><Row className="no-gutters d-none d-md-flex bg-white py-3">

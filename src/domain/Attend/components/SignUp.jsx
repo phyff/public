@@ -23,7 +23,7 @@ const SignUp = () => {
                   fill out this form once.
                 </p>
                 <a href={googleForm} className="lead hover-arrow">
-                  Open in Google Sheets
+                  Open in Google Forms
                 </a>
               </Col>
               <Col xl={6} md={6} className="mb-lg-n7 layer-3" data-aos="fade-left">
