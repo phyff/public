@@ -5,12 +5,14 @@ import {
 import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
 import blob1 from '../assets/img/decorations/deco-blob-1.svg';
-import mail from '../assets/img/icons/theme/communication/mail.svg';
+import contacts from '../data/contacts';
 import Svg from './Svg';
 import navItems from '../data/navItems';
+import useEventInfo from '../hooks/useEventInfo';
 
 const Footer = () => {
-  const submissionsOpen = true;
+  const { address, submissionDeadline } = useEventInfo();
+  const submissionsOpen = Date.now() < submissionDeadline?.toDate().getTime();
 
   return (
     <footer className="pb-4 bg-primary-3 text-light layer-4" id="footer">
@@ -21,7 +23,7 @@ const Footer = () => {
               <div
                 className="position-relative d-flex flex-column flex-md-row justify-content-between align-items-center"
               >
-                <div className="h3 text-center mb-md-0">{submissionsOpen ? 'Submit to PHYFF Today' : 'Attend the Festival'}</div>
+                <div className="h3 text-center mb-md-0">{submissionsOpen ? 'Submit to PHYFF Today!' : 'Attend the Festival!'}</div>
                 <LinkContainer to={submissionsOpen ? '/submit' : '/attend'}>
                   <Button variant="white" size="lg">
                     {submissionsOpen ? 'Submit' : 'Attend'}
@@ -53,12 +55,14 @@ const Footer = () => {
           <Col className="col-6 col-lg">
             <h5>Contact</h5>
             <ul className="list-unstyled">
-              <li className="mb-3 d-flex">
-                <Svg src={mail} className="icon" />
-                <div className="ml-3">
-                  <a href="#">barngaproject@gmail.com</a>
-                </div>
-              </li>
+              {contacts(address).slice(0, 3).map(({ icon, text, href }) => (
+                <li className="mb-2 d-flex" key={href}>
+                  <Svg src={icon} className="icon" />
+                  <div className="ml-3">
+                    <a href={href}>{text}</a>
+                  </div>
+                </li>
+              ))}
             </ul>
           </Col>
         </Row>

@@ -13,9 +13,10 @@ import dots3 from '../../../assets/img/decorations/deco-dots-2.svg';
 import blob13 from '../../../assets/img/decorations/deco-blob-13.svg';
 import blob2 from '../../../assets/img/decorations/deco-blob-2.svg';
 import divider from '../../../assets/img/dividers/divider-3.svg';
+import useEventInfo from '../../../hooks/useEventInfo';
 
 const EventDetails = () => {
-  const date = new Date(2020, 2, 27);
+  const { date, address } = useEventInfo();
 
   return (
     <section className="bg-primary has-divider">
@@ -83,7 +84,7 @@ const EventDetails = () => {
                   <h4>When?</h4>
                   <p>
                     The Fest will take place on&nbsp;
-                    <strong>{moment(date).format('dddd, MMMM Do YYYY')}</strong>&nbsp;
+                    <strong>{moment(date?.toDate()).format('dddd, MMMM Do YYYY')}</strong>&nbsp;
                     from&nbsp;
                     <strong>12:00 pm to 6:00 pm.</strong>&nbsp;
                     You can arrive and leave at any time. We
@@ -108,7 +109,7 @@ const EventDetails = () => {
                   <h4>Where?</h4>
                   <p>
                     The Fest is hosted on the campus of&nbsp;
-                    <Link to="https://goo.gl/maps/6ktWFaRjn5dEVfN37">Germantown Friends School</Link>,
+                    <a href={`https://www.google.com/maps/search/?api=1&query=${address}`}>Germantown Friends School</a>,
                     in the Sharpless building. There will be signs guiding you around campus on the
                     day of the event.
                   </p>

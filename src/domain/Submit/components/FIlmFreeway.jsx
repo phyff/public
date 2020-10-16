@@ -3,14 +3,13 @@ import {
   Button, Card, Col, Container, Row,
 } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import filmfreeway from '../../../assets/img/content/filmfreeway.png';
 import filmfreewayLogoWhite from '../../../assets/img/content/filmfreeway-logo-white.png';
 import Svg from '../../../components/Svg';
 import divider from '../../../assets/img/dividers/divider-3.svg';
 
 const FilmFreeway = ({ submissionDeadline }) => {
-  const submissionsOpen = Date.now() < submissionDeadline;
+  const submissionsOpen = Date.now() < (submissionDeadline ?? Number.MAX_SAFE_INTEGER);
 
   return (
     <section className="bg-white has-divider">

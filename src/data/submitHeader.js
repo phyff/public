@@ -5,7 +5,7 @@ const submitHeader = (submissionDeadline) => ({
   title: 'Submit',
   image: submit,
   color: 'bg-primary-2',
-  caption: (submissionDeadline < Date.now()
+  caption: submissionDeadline && (submissionDeadline < Date.now()
     ? 'Submissions are now closed.'
     : `Submissions close on ${moment(submissionDeadline).format('dddd, MMMM Do YYYY')}`
   ),

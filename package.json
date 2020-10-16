@@ -13,6 +13,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@firebase/app": "^0.6.9",
+    "@firebase/app-types": "^0.6.1",
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
@@ -44,6 +46,7 @@
     "express": "^4.17.1",
     "express-sslify": "^1.2.0",
     "file-loader": "^6.0.0",
+    "firebase": "^7.17.2",
     "formik": "^2.1.5",
     "gulp-concat": "^2.6.1",
     "gulp-uglify": "^3.0.2",

@@ -1,3 +1,3 @@
-const baseURL = process.env.NODE_ENV === 'production' ? 'wss://barnga-api.herokuapp.com' : 'http://localhost:3000';
+const baseURL = process.env.NODE_ENV === 'production' ? 'https://phyff.com' : 'http://localhost:7000';
 
 export default baseURL;

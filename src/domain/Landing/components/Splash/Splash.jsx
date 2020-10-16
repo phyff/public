@@ -10,9 +10,10 @@ import decoLines5 from '../../../../assets/img/decorations/deco-lines-5.svg';
 import decoBlob4 from '../../../../assets/img/decorations/deco-blob-4.svg';
 import decoDots1 from '../../../../assets/img/decorations/deco-dots-1.svg';
 import divider from '../../../../assets/img/dividers/divider-3.svg';
+import useEventInfo from '../../../../hooks/useEventInfo';
 
 const Splash = () => {
-  const date = new Date(2021, 1, 27);
+  const { date, venueName } = useEventInfo();
 
   return (
     <section className="bg-primary-2 text-light p-0 o-hidden">
@@ -20,9 +21,9 @@ const Splash = () => {
       <Container className="layer-2">
         <Row className="py-6 min-vh-80 align-items-center" data-aos="fade-up">
           <Col lg={9} xl={9}>
-            <h5>{moment(date).format('dddd, MMMM Do YYYY')}</h5>
+            <h5>{date && moment(date?.toDate()).format('dddd, MMMM Do YYYY')}</h5>
             <h1 className="display-3">Philadelphia Youth Film Festival</h1>
-            <p className="lead mb-4">Germantown Friends School, PA</p>
+            <p className="lead mb-4">{venueName}</p>
             <Link to="/attend" className="btn btn-primary btn-lg">
               Attend
             </Link>
