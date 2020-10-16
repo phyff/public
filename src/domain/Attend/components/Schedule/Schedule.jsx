@@ -7,9 +7,10 @@ import Svg from '../../../../components/Svg';
 import dots3 from '../../../../assets/img/decorations/deco-dots-1.svg';
 import NoWorkshops from './NoWorkshops';
 import useWorkshops from '../../../../hooks/useWorkshops';
+import Loading from '../../../../components/Loading';
 
 const Schedule = () => {
-  const workshops = useWorkshops();
+  const { workshops, isEmpty, isLoaded } = useWorkshops();
 
   return (
     <section id="schedule">
@@ -56,7 +57,13 @@ const Schedule = () => {
               </>
             )
             : (
-              <NoWorkshops />
+              isLoaded
+                ? <NoWorkshops />
+                : (
+                  <div className="min-vh-70 h-100 w-100 p-0 m-0 border-0 card card-body justify-content-center">
+                    <Loading className="ml-auto mr-auto" />
+                  </div>
+                )
             )}
         </div>
         <div className="decoration bottom left scale-2 d-none d-md-block">
