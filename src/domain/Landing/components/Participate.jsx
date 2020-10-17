@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Svg from '../../../components/Svg';
 import blob13 from '../../../assets/img/decorations/deco-blob-13.svg';
 import dots3 from '../../../assets/img/decorations/deco-dots-2.svg';
-import blob1 from '../../../assets/img/decorations/deco-blob-1.svg';
+import contacts from '../../../data/contacts';
 
 const Participate = () => (
   <section className="bg-primary text-light has-divider">
@@ -68,7 +68,12 @@ const Participate = () => (
             />
           </div>
           <div className="text-center">
-            <span>Want to sponsor the event? <a href="#" className="hover-arrow">Get in touch</a>
+            <span>Want to sponsor the event?
+              <a
+                href={contacts().filter(({ name }) => name === 'email')[0].href}
+                className="hover-arrow"
+              > Get in touch
+              </a>
             </span>
           </div>
         </Col>

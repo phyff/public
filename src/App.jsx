@@ -6,6 +6,7 @@ import NotFound from './domain/NotFound/NotFound';
 import Submit from './domain/Submit/Submit';
 import Attend from './domain/Attend/Attend';
 import ScrollToTop from './components/ScrollToTop';
+import Winners from './domain/Winners/Winners';
 
 const App = () => (
   <BrowserRouter>
@@ -15,6 +16,7 @@ const App = () => (
         <Route path="/submit" exact component={Submit} />
         <Route path="/about" exact component={About} />
         <Route path="/attend" exact component={Attend} />
+        <Route path="/winners" exact component={Winners} />
         <Route component={NotFound} />
       </Switch>
     </ScrollToTop>

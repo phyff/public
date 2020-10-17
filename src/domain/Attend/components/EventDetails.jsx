@@ -24,7 +24,7 @@ const EventDetails = () => {
         <Row className="justify-content-center">
           <Col>
             <Row className="justify-content-center layer-2">
-              <Col md={5} sm={10} className="mb-3">
+              <Col md={5} sm={8} xs={10} className="mb-3">
                 <div
                   className="card card-icon-3 card-body h-100 justify-content-between"
                   data-aos="fade-up"
@@ -46,7 +46,7 @@ const EventDetails = () => {
                   </p>
                 </div>
               </Col>
-              <Col md={5} sm={10} className="mb-3">
+              <Col md={5} sm={8} xs={10} className="mb-3">
                 <div
                   className="card card-icon-3 card-body h-100 justify-content-between"
                   data-aos="fade-up"
@@ -68,11 +68,11 @@ const EventDetails = () => {
                   </p>
                 </div>
               </Col>
-              <Col md={5} sm={10} className="mb-3">
+              <Col md={5} sm={8} xs={10} className="mb-3">
                 <div
                   className="card card-icon-3 card-body h-100 justify-content-between"
                   data-aos="fade-up"
-                  data-aos-delay="300"
+                  data-aos-delay="100"
                 >
                   <div className="icon-round mb-3 mb-md-4 bg-primary-2">
                     <Svg
@@ -93,11 +93,11 @@ const EventDetails = () => {
                   </p>
                 </div>
               </Col>
-              <Col md={5} sm={10} className="mb-3">
+              <Col md={5} sm={8} xs={10} className="mb-3">
                 <div
                   className="card card-icon-3 card-body h-100 justify-content-between"
                   data-aos="fade-up"
-                  data-aos-delay="400"
+                  data-aos-delay="200"
                 >
                   <div className="icon-round mb-3 mb-md-4 bg-primary-2">
                     <Svg

@@ -23,7 +23,7 @@ const TeamMember = ({ member }) => (
         </Card.Body>
       </Card>
     </Col>
-    <Col sm={6} xs={12} className="d-md-none">
+    <Col sm={6} xs={10} className="d-md-none">
       <div className="card card-sm card-body flex-row align-items-center">
         <img className="avatar" src={member.photoURL} alt={member.name} />
         <div className="ml-3">

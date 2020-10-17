@@ -19,7 +19,7 @@ const Team = () => {
             <h2 className="h1">The PHYFF Team</h2>
           </Col>
         </Row>
-        <Row className="row">
+        <Row className="justify-content-center">
           {team.map((member) => (
             <TeamMember member={member} key={member.name} />
           ))}

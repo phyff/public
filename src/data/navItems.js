@@ -1,16 +1,23 @@
 const navItems = [
-  {
-    name: 'Submit',
-    to: '/submit',
-  },
-  {
-    name: 'Attend',
-    to: '/attend',
-  },
-  {
-    name: 'About',
-    to: '/about',
-  },
+  [
+    {
+      name: 'Submit',
+      to: '/submit',
+    },
+    {
+      name: 'Attend',
+      to: '/attend',
+    },
+  ], [
+    {
+      name: 'Winners',
+      to: '/winners',
+    },
+    {
+      name: 'About',
+      to: '/about',
+    },
+  ],
 ];
 
 export default navItems;

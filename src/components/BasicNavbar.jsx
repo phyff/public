@@ -24,6 +24,20 @@ const BasicNavbar = () => {
     isDark: true,
   };
 
+  const generateNavItem = ({ to, name }) => (
+    <Nav.Link as={Link} to={to} key={name}>
+      {name}
+    </Nav.Link>
+  );
+
+  const generateNavButton = ({ to, name }, index) => (
+    <Nav.Link as={Link} to={to} key={name}>
+      <Button className={`btn-${['primary', 'primary-2'][index % 2]}`}>
+        {name}
+      </Button>
+    </Nav.Link>
+  );
+
   return (
     <Navbar
       variant={navSettings.isDark ? 'dark' : 'light'}
@@ -44,12 +58,11 @@ const BasicNavbar = () => {
         />
       </Navbar.Toggle>
       <Navbar.Collapse className="justify-content-end" id="basic-navbar-collapse">
+        <Nav>
+          {navItems[0].map(generateNavButton)}
+        </Nav>
         <Nav className="ml-auto">
-          {navItems.map(({ to, name }) => (
-            <Nav.Link as={Link} to={to} key={name}>
-              {name}
-            </Nav.Link>
-          ))}
+          {navItems[1].map(generateNavItem)}
         </Nav>
       </Navbar.Collapse>
     </Navbar>

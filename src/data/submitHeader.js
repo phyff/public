@@ -9,9 +9,10 @@ const submitHeader = (submissionDeadline) => ({
     ? 'Submissions are now closed.'
     : `Submissions close on ${moment(submissionDeadline).format('dddd, MMMM Do YYYY')}`
   ),
+  decorationStyle: 1,
   decoColors: {
-    blob: 'bg-primary',
-    dots: 'bg-primary-2',
+    primary: 'bg-primary',
+    secondary: 'bg-primary-2',
   },
 });
 
