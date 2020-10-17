@@ -67,3 +67,14 @@
   border-bottom: 0;
   transition: 0.35s;
 }
+
+// Footer
+
+.footer-divider {
+  height: 1px;
+  width: 50%;
+  display: block; /* for use on default inline elements like span */
+  margin: 2px 0px;
+  overflow: hidden;
+  background-color: $primary;
+}

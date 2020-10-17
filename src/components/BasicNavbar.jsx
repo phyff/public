@@ -32,7 +32,7 @@ const BasicNavbar = () => {
 
   const generateNavButton = ({ to, name }, index) => (
     <Nav.Link as={Link} to={to} key={name}>
-      <Button className={`btn-${['primary', 'primary-2'][index % 2]}`}>
+      <Button className={`btn-${['primary-2', 'primary'][index % 2]}`}>
         {name}
       </Button>
     </Nav.Link>
@@ -59,10 +59,10 @@ const BasicNavbar = () => {
       </Navbar.Toggle>
       <Navbar.Collapse className="justify-content-end" id="basic-navbar-collapse">
         <Nav>
-          {navItems[0].map(generateNavButton)}
+          {navItems[0].map(generateNavItem)}
         </Nav>
         <Nav className="ml-auto">
-          {navItems[1].map(generateNavItem)}
+          {navItems[1].map(generateNavButton)}
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -14236,4 +14236,13 @@ article table {
   border-bottom: 0;
   transition: 0.35s; }
 
+.footer-divider {
+  height: 1px;
+  width: 50%;
+  display: block;
+  /* for use on default inline elements like span */
+  margin: 2px 0px;
+  overflow: hidden;
+  background-color: #5B558E; }
+
 /*# sourceMappingURL=theme-event.css.map */

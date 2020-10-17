@@ -43,12 +43,17 @@ const Footer = () => {
               <li className="nav-item">
                 <Link to="/" className="nav-link">Home</Link>
               </li>
-              {navItems.map((navItem) => (
-                <li className="nav-item" key={navItem.name}>
-                  <Link to={navItem.to} className="nav-link">
-                    {navItem.name}
-                  </Link>
-                </li>
+              {navItems.map((item) => (
+                <div key={item[0].name}>
+                  <span className="footer-divider" />
+                  {item.map((navItem) => (
+                    <li className="nav-item" key={navItem.name}>
+                      <Link to={navItem.to} className="nav-link">
+                        {navItem.name}
+                      </Link>
+                    </li>
+                  ))}
+                </div>
               ))}
             </ul>
           </Col>
