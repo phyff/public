@@ -13,9 +13,14 @@ const WorkshopsPreview = () => {
 
   if (!isLoaded) {
     return (
-      <div className="min-vh-70 h-100 w-100 p-0 m-0 border-0 card card-body justify-content-center">
-        <Loading className="ml-auto mr-auto" />
-      </div>
+      <section className="has-divider">
+        <div className="h-100 w-100 p-0 m-0 border-0 justify-content-center">
+          <Loading className="ml-auto mr-auto" />
+        </div>
+        <div className="divider">
+          <Svg className="bg-secondary-alt" src={divider} alt="divider graphic" />
+        </div>
+      </section>
     );
   }
 
@@ -28,7 +33,7 @@ const WorkshopsPreview = () => {
         <section className="has-divider">
           <Topics workshops={workshops} count={4} />
           <div className="divider">
-            <Svg className="bg-primary" src={divider} alt="divider graphic" />
+            <Svg className="bg-primary-alt" src={divider} alt="divider graphic" />
           </div>
         </section>
       </>
@@ -45,7 +50,7 @@ const WorkshopsPreview = () => {
         </Row>
       </Container>
       <div className="divider">
-        <Svg className="bg-primary" src={divider} alt="divider graphic" />
+        <Svg className="bg-primary-alt" src={divider} alt="divider graphic" />
       </div>
     </section>
   );

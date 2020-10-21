@@ -19,7 +19,7 @@ const Description = () => (
                 narrative, documentary, experimental, and screenplay. At each festival,
                 we offer several workshops on a variety of common and niche filmmaking focuses.
               </p>
-              <Link to="#" className="lead hover-arrow">View 2018 Highlights</Link>
+              <Link to="/winners" className="lead hover-arrow">View Highlights & Winners</Link>
             </Col>
           </Row>
         </Col>

@@ -1,4 +1,4 @@
-import attend from '../assets/img/content/phyff-poster-2.png';
+import attend from '../assets/img/content/phyff-poster-2-bw.png';
 
 const attendHeader = {
   title: 'Attend',

@@ -25,7 +25,22 @@ const TeamMember = ({ member }) => (
     </Col>
     <Col sm={6} xs={10} className="d-md-none">
       <div className="card card-sm card-body flex-row align-items-center">
-        <img className="avatar" src={member.photoURL} alt={member.name} />
+        <div
+          className="avatar d-none d-sm-block avatar-lg rounded-circle"
+          style={{
+            backgroundImage: `url(${member.photoURL})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
+          }}
+        />
+        <div
+          className="avatar d-sm-none d-sx-block avatar-xlg rounded-circle"
+          style={{
+            backgroundImage: `url(${member.photoURL})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
+          }}
+        />
         <div className="ml-3">
           <h5 className="mb-0">{member.name}</h5>
           <span>{member.title}</span>
