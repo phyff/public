@@ -11,10 +11,8 @@ const WinnersCategorySection = ({ category, winners }) => {
   return (
     <div className="mb-3">
       <div className="justify-content-center text-center mb-1">
-        <h3>
-          {title}
-          {/* <Svg src={icon} className="bg-primary icon d-inline-block" /> */}
-        </h3>
+        <Svg src={icon} className="icon icon-lg bg-primary" externalClassnames="d-inline-block" />
+        <h3>{title}</h3>
         <p className="lead">{description}</p>
       </div>
       <WinnersTable winners={winners} />

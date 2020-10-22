@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Col, ListGroup, Row, Button,
+  Col, ListGroup, Row, Button, Tooltip, OverlayTrigger,
 } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAward, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
@@ -39,7 +39,17 @@ const WinnerRow = ({ winner, delay }) => {
         </Col>
         {local && (
           <Col md={1} sm={3} className="text-center mb-1">
-            <span className="badge badge-pill badge-primary-2 m-1">Local</span>
+            <OverlayTrigger
+              placement="right"
+              delay={{ show: 400, hide: 250 }}
+              overlay={(props) => (
+                <Tooltip {...props}>
+                  <strong>{title}</strong> was created by a filmmaker from the Philadelphia area.
+                </Tooltip>
+              )}
+            >
+              <span className="badge badge-pill badge-primary-2 m-1">Local</span>
+            </OverlayTrigger>
           </Col>
         )}
         <Col md={5} sm={10} className="text-center text-md-right ml-md-auto">

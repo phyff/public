@@ -34,7 +34,7 @@ const TeamMember = ({ member }) => (
           }}
         />
         <div
-          className="avatar d-sm-none d-sx-block avatar-xlg rounded-circle"
+          className="avatar d-sm-none d-xs-block avatar-xlg rounded-circle"
           style={{
             backgroundImage: `url(${member.photoURL})`,
             backgroundSize: 'cover',

@@ -20,7 +20,7 @@ const Participate = () => (
       <Row className="justify-content-center">
         <Col lg={8} xl={7}>
           <div
-            className="card card-lg card-body flex-sm-row align-items-center film-primary bg-white text-primary layer-2"
+            className="card card-lg card-body flex-row align-items-center film-primary bg-white text-primary layer-2"
             data-aos="fade-right"
             data-aos-delay={100}
           >
@@ -34,7 +34,7 @@ const Participate = () => (
             </div>
           </div>
           <div
-            className="card card-lg card-body flex-sm-row align-items-center pricing-ticket-primary bg-primary-2 layer-2"
+            className="card card-lg card-body flex-row align-items-center pricing-ticket-primary bg-primary-2 layer-2"
             data-aos="fade-left"
             data-aos-delay={200}
           >

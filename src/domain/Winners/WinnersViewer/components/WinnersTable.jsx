@@ -15,7 +15,7 @@ const WinnersTable = ({ winners }) => (
               <span className="h6 mb-0 text-muted">Title</span>
             </Col>
             <Col md className="ml-auto text-right">
-              <span className="h6 mb-0 text-muted">Director(s)</span>
+              <span className="h6 mb-0 text-muted">Filmmaker(s)</span>
             </Col>
           </Row>
           <ListGroup

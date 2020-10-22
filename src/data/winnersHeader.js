@@ -5,6 +5,7 @@ const winnersHeader = {
   image: awards,
   color: 'bg-primary-2',
   caption: 'Each year, filmmaking experts will judge and rank submitted films in four categories. The top 3 films are selected in each category. Submit your film for a chance to win!',
+  dividerColor: 'bg-primary-alt',
   decoColors: {
     primary: 'bg-primary',
     secondary: 'bg-primary-alt',

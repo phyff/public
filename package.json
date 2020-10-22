@@ -1,16 +1,15 @@
 {
   "name": "phyff",
   "private": true,
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.2.1",
+  "description": "The public website for the Philadelphia Youth Film Festival.",
   "scripts": {
     "dev": "webpack-dev-server --env.NODE_ENV=development --host 0.0.0.0",
     "build": "webpack --env.NODE_ENV=production",
     "start": "node server.js",
     "gulp": "gulp"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Robert May",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.11.1",
@@ -50,24 +49,18 @@
     "express-sslify": "^1.2.0",
     "file-loader": "^6.0.0",
     "firebase": "^7.17.2",
-    "formik": "^2.1.5",
     "gulp-concat": "^2.6.1",
     "gulp-uglify": "^3.0.2",
     "helmet": "^4.1.1",
-    "konva": "^7.0.6",
     "moment": "^2.29.1",
     "morgan": "^1.10.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-bootstrap": "^1.3.0",
-    "react-color": "^2.18.1",
-    "react-crossfade-image": "^1.2.0",
     "react-dom": "^16.13.1",
     "react-router": "^5.2.0",
     "react-router-bootstrap": "^0.25.0",
     "react-router-dom": "^5.2.0",
-    "react-svg": "^11.0.35",
-    "socket.io-client": "^2.3.0",
-    "yup": "^0.29.3"
+    "react-svg": "^11.0.35"
   }
 }

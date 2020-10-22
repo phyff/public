@@ -4,7 +4,9 @@ import {
 } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
-import blob1 from '../assets/img/decorations/deco-blob-1.svg';
+import blob1 from '../assets/img/decorations/deco-blob-10.svg';
+import lines5 from '../assets/img/decorations/deco-lines-5.svg';
+import lines6 from '../assets/img/decorations/deco-lines-6.svg';
 import contacts from '../data/contacts';
 import Svg from './Svg';
 import navItems from '../data/navItems';
@@ -30,8 +32,11 @@ const Footer = () => {
                   </Button>
                 </LinkContainer>
               </div>
-              <div className="decoration layer-0">
-                <Svg src={blob1} className="bg-primary-2" />
+              <div className="decoration middle-y right scale-2 layer-0">
+                <Svg src={lines5} className="bg-primary-2" />
+              </div>
+              <div className="decoration bottom right layer-0">
+                <Svg src={lines6} className="bg-primary-2-alt" />
               </div>
             </div>
           </Col>
@@ -63,8 +68,8 @@ const Footer = () => {
               {contacts(address).slice(0, 3).map(({ icon, text, href }) => (
                 <li className="mb-2 d-flex" key={href}>
                   <Svg src={icon} className="icon" />
-                  <div className="ml-3">
-                    <a href={href}>{text}</a>
+                  <div className="ml-3 w-100">
+                    <a href={href} className="w-100" style={{ wordWrap: 'break-word', wordBreak: 'break-all' }}>{text}</a>
                   </div>
                 </li>
               ))}

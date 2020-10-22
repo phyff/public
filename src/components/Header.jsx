@@ -14,7 +14,7 @@ const DecorationStyleOne = ({ data }) => (
     <div className="decoration middle-y right d-none d-xl-block" data-jarallax-element="50 50">
       <Svg src={blob} className={data.decoColors?.primary ?? 'bg-primary-3'} />
     </div>
-    <div className="decoration middle-y right scale-2 d-none d-lg-block" data-jarallax-element="100">
+    <div className="decoration middle-y right scale-2 d-none d-xl-block" data-jarallax-element="100">
       <Svg src={dots} className={data.decoColors?.secondary ?? 'bg-primary-2'} />
     </div>
   </>
@@ -29,7 +29,7 @@ const DecorationStyleTwo = ({ data }) => (
     <div className="decoration middle-y right scale-2 d-none d-xl-block" data-jarallax-element="50 50">
       <Svg src={lines} className={data.decoColors?.primary ?? 'bg-primary-3'} />
     </div>
-    <div className="decoration middle-y left scale-3 d-none d-lg-block" data-jarallax-element="100">
+    <div className="decoration middle-y left scale-3 d-none d-xl-block" data-jarallax-element="100">
       <Svg src={dots3} className={data.decoColors?.secondary ?? 'bg-primary-2'} />
     </div>
   </>
