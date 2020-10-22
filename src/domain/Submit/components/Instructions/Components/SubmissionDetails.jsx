@@ -18,7 +18,7 @@ const SubmissionDetails = () => (
       </Col>
     </Row>
     <Row className="justify-content-center">
-      <Col lg={4} md={6} sm={12}>
+      <Col lg={4} md={6} sm={12} className="mb-2">
         <Card className="h-100" data-aos="fade-up" data-aos-delay="100">
           <Card.Body>
             <div className="icon-round mb-3 mb-md-4 bg-primary">
@@ -38,7 +38,7 @@ const SubmissionDetails = () => (
           </Card.Body>
         </Card>
       </Col>
-      <Col lg={4} md={6} sm={12}>
+      <Col lg={4} md={6} sm={12} className="mb-2">
         <Card className="h-100" data-aos="fade-up" data-aos-delay="200">
           <Card.Body>
             <div className="icon-round mb-3 mb-md-4 bg-primary">
@@ -57,7 +57,7 @@ const SubmissionDetails = () => (
           </Card.Body>
         </Card>
       </Col>
-      <Col lg={4} md={6} sm={12}>
+      <Col lg={4} md={6} sm={12} className="mb-2">
         <Card className="h-100" data-aos="fade-up" data-aos-delay="200">
           <Card.Body>
             <div className="icon-round mb-3 mb-md-4 bg-primary">

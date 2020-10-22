@@ -4,7 +4,6 @@ import {
 } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
-import blob1 from '../assets/img/decorations/deco-blob-10.svg';
 import lines5 from '../assets/img/decorations/deco-lines-5.svg';
 import lines6 from '../assets/img/decorations/deco-lines-6.svg';
 import contacts from '../data/contacts';

@@ -7,7 +7,8 @@
     "dev": "webpack-dev-server --env.NODE_ENV=development --host 0.0.0.0",
     "build": "webpack --env.NODE_ENV=production",
     "start": "node server.js",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "lint": "eslint \"src/**/*\" --fix --ext .js --ext .jsx --ignore-pattern \"src/assets/\""
   },
   "author": "Robert May",
   "license": "ISC",

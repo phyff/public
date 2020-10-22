@@ -19,14 +19,15 @@ const Description = () => (
                 narrative, documentary, experimental, and screenplay. At each festival,
                 we offer several workshops on a variety of common and niche filmmaking focuses.
               </p>
-              <Link to="/winners" className="lead hover-arrow">View Highlights & Winners</Link>
+              <Link to="/winners" className="lead hover-arrow">See Last Year&apos;s Winners</Link>
             </Col>
           </Row>
         </Col>
         <Col md={5} lg={6} className="mb-3 mb-md-0">
           <div className="image-collage">
-            <Link
-              to="#"
+            { /* Theme depends on anchors, but these images should not redirect on click */
+              /* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a
               data-fancybox="Collage Gallery"
               className="d-none d-lg-block"
             >
@@ -38,8 +39,12 @@ const Description = () => (
                   data-aos="fade-right"
                 />
               </div>
-            </Link>
-            <Link to="#" data-fancybox="Collage Gallery">
+            </a>
+            { /* Theme depends on anchors, but these images should not redirect on click */
+              /* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a
+              data-fancybox="Collage Gallery"
+            >
               <div data-jarallax-element="0 6">
                 <img
                   src={desc2}
@@ -48,9 +53,10 @@ const Description = () => (
                   data-aos="fade-up"
                 />
               </div>
-            </Link>
-            <Link
-              to="#"
+            </a>
+            { /* Theme depends on anchors, but these images should not redirect on click */
+              /* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a
               data-fancybox="Collage Gallery"
               className="d-none d-lg-block"
             >
@@ -62,7 +68,7 @@ const Description = () => (
                   data-aos="fade-left"
                 />
               </div>
-            </Link>
+            </a>
           </div>
         </Col>
       </Row>

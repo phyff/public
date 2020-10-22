@@ -1,8 +1,7 @@
 import React from 'react';
 import {
-  Card, Col, Container, Row,
+  Col, Container, Row,
 } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import moment from 'moment';
 import Svg from '../../../components/Svg';
 import clock from '../../../assets/img/icons/theme/home/clock.svg';

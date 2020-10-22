@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import profile from '../../../../../assets/img/icons/theme/general/user.svg';
+import workshopType from '../../../../../types/workshop';
 
 const Speakers = ({ workshops }) => (
   <Container>
@@ -25,7 +25,7 @@ const Speakers = ({ workshops }) => (
           <div>
             <h5 className="mb-0">{workshop.speaker.name}</h5>
             {workshop.speaker.contact && (
-              <Link to="#">{workshop.speaker.contact}</Link>
+              <small>{workshop.speaker.contact}</small>
             )}
           </div>
         </Col>
@@ -35,7 +35,7 @@ const Speakers = ({ workshops }) => (
 );
 
 Speakers.propTypes = {
-  workshops: PropTypes.array,
+  workshops: PropTypes.arrayOf(workshopType),
 };
 
 export default Speakers;

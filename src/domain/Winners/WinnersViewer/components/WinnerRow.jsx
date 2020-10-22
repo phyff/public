@@ -5,7 +5,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAward, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
-import winner from '../../../../types/winner';
+import winnerType from '../../../../types/winner';
 
 const WinnerRow = ({ winner, delay }) => {
   const {
@@ -61,7 +61,7 @@ const WinnerRow = ({ winner, delay }) => {
 };
 
 WinnerRow.propTypes = {
-  winner,
+  winner: winnerType,
   delay: PropTypes.number,
 };
 

@@ -9,7 +9,7 @@ import useWorkshops from '../../../../hooks/useWorkshops';
 import Loading from '../../../../components/Loading';
 
 const WorkshopsPreview = () => {
-  const { workshops, isLoaded, isEmpty } = useWorkshops();
+  const { workshops, isLoaded } = useWorkshops();
 
   if (!isLoaded) {
     return (

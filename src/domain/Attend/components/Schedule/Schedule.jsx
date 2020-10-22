@@ -10,7 +10,15 @@ import useWorkshops from '../../../../hooks/useWorkshops';
 import Loading from '../../../../components/Loading';
 
 const Schedule = () => {
-  const { workshops, isEmpty, isLoaded } = useWorkshops();
+  const { workshops, isLoaded } = useWorkshops();
+
+  const displayIfEmpty = isLoaded
+    ? <NoWorkshops />
+    : (
+      <div className="min-vh-70 h-100 w-100 p-0 m-0 border-0 card card-body justify-content-center">
+        <Loading className="ml-auto mr-auto" />
+      </div>
+    );
 
   return (
     <section id="schedule">
@@ -56,15 +64,7 @@ const Schedule = () => {
                 </ListGroup>
               </>
             )
-            : (
-              isLoaded
-                ? <NoWorkshops />
-                : (
-                  <div className="min-vh-70 h-100 w-100 p-0 m-0 border-0 card card-body justify-content-center">
-                    <Loading className="ml-auto mr-auto" />
-                  </div>
-                )
-            )}
+            : displayIfEmpty}
         </div>
         <div className="decoration bottom left scale-2 d-none d-md-block">
           <Svg

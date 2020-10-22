@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import divider from '../../../../assets/img/dividers/divider-3.svg';
 import Svg from '../../../../components/Svg';
 import SponsorList from './components/SponsorList';
-import poster from '../../../../assets/img/content/phyff-poster-2.png';
 import LandingVideo from './components/LandingVideo';
 
 const Explanation = () => (

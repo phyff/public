@@ -6,6 +6,7 @@ import attend from '../../../../../assets/img/content/attend.jpg';
 import submit from '../../../../../assets/img/content/submit.jpg';
 import learn from '../../../../../assets/img/content/learn.jpg';
 import more from '../../../../../assets/img/content/more.jpg';
+import workshopType from '../../../../../types/workshop';
 
 const Topics = ({ workshops, count }) => {
   const getBackgroundImage = (index) => {
@@ -62,7 +63,7 @@ const Topics = ({ workshops, count }) => {
 };
 
 Topics.propTypes = {
-  workshops: PropTypes.array,
+  workshops: PropTypes.arrayOf(workshopType),
   count: PropTypes.number,
 };
 

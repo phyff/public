@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Card, Col, Container, Row, Spinner,
+  Col, Container, Row,
 } from 'react-bootstrap';
 import Svg from '../../../components/Svg';
 import divider from '../../../assets/img/dividers/divider-5.svg';
