@@ -70,7 +70,7 @@ module.exports = (env) => ({
       threshold: 10240,
       minRatio: 0.8,
     }),
-    new CompressionPlugin({
+    env.NODE_ENV === 'production' ? new CompressionPlugin({
       filename: '[path][base].br',
       algorithm: 'brotliCompress',
       test: /\.(js|css|html|svg)$/,
@@ -79,7 +79,7 @@ module.exports = (env) => ({
       },
       threshold: 10240,
       minRatio: 0.8,
-    }),
+    }) : false,
   ],
   devServer: {
     historyApiFallback: true,
