@@ -17,7 +17,7 @@ const LastYearWinners = () => {
         <Container>
           <div className="justify-content-center">
             <h1 className="mb-2">Last Year&apos;s Winners</h1>
-            <WinnersYearPage year={year} compact />
+            <WinnersYearPage year={year} compact navLeft />
           </div>
         </Container>
         <div className="divider flip-x">

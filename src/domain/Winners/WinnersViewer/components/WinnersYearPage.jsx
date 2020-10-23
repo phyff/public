@@ -6,7 +6,7 @@ import useWinners from '../../../../hooks/useWinners';
 import WinnersCategorySection from './WinnersCategorySection';
 import useQuery from '../../../../helpers/useQuery';
 
-const WinnersYearPage = ({ year, compact }) => {
+const WinnersYearPage = ({ year, compact, navLeft }) => {
   const categoryTitles = categories.map((category) => category.title);
   const [activeKey, setActiveKey] = useState(categoryTitles[0]);
   const query = useQuery();
@@ -24,7 +24,7 @@ const WinnersYearPage = ({ year, compact }) => {
         activeKey={activeKey}
         onSelect={(k) => setActiveKey(k)}
         variant="pills"
-        className="mb-3 justify-content-end"
+        className={`mb-3 ${navLeft ? null : 'justify-content-end'}`}
       >
         {categories.map((category) => (
           <Tab eventKey={category.title} title={category.title} key={category.title}>
@@ -54,6 +54,7 @@ const WinnersYearPage = ({ year, compact }) => {
 WinnersYearPage.propTypes = {
   year: PropTypes.number,
   compact: PropTypes.bool,
+  navLeft: PropTypes.bool,
 };
 
 export default WinnersYearPage;
