@@ -80,7 +80,7 @@ module.exports = (env) => ({
       threshold: 10240,
       minRatio: 0.8,
     }) : false,
-  ],
+  ].filter(Boolean),
   devServer: {
     historyApiFallback: true,
     port: 7000,
