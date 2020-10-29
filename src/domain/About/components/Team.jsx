@@ -20,9 +20,11 @@ const Team = () => {
           </Col>
         </Row>
         <Row className="justify-content-center">
-          {team.map((member) => (
-            <TeamMember member={member} key={member.name} />
-          ))}
+          {team
+            .sort((m1, m2) => m1.order - m2.order)
+            .map((member) => (
+              <TeamMember member={member} key={member.name} />
+            ))}
         </Row>
       </Container>
     </section>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Card } from 'react-bootstrap';
-import PropTypes from 'prop-types';
+import teamMember from '../../../types/teamMember';
 
 const TeamMember = ({ member }) => (
   <>
@@ -51,12 +51,7 @@ const TeamMember = ({ member }) => (
 );
 
 TeamMember.propTypes = {
-  member: PropTypes.shape({
-    name: PropTypes.string,
-    photoURL: PropTypes.string,
-    biography: PropTypes.string,
-    title: PropTypes.string,
-  }),
+  member: teamMember,
 };
 
 export default TeamMember;
