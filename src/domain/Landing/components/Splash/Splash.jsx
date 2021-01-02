@@ -33,21 +33,21 @@ const Splash = () => {
       <div className="decoration-wrapper">
         <div className="decoration middle-y left scale-4" data-aos="fade-right">
           <Svg
-            className="bg-primary-2"
+            className="bg-primary-2 d-none d-sm-block"
             src={decoLines5}
             alt="deco-lines-5 decoration"
           />
         </div>
         <div className="decoration bottom right scale-2" data-jarallax-element="20">
           <Svg
-            className="bg-primary"
+            className="bg-primary d-none d-md-block"
             src={decoBlob4}
             alt="deco-blob-4 decoration"
           />
         </div>
         <div className="decoration bottom right" data-jarallax-element="-50">
           <Svg
-            className="bg-white"
+            className="bg-white d-none d-md-block"
             src={decoDots1}
             alt="deco-dots-1 decoration"
           />

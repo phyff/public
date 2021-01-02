@@ -4,6 +4,10 @@
 //
 // Place your own custom CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
 
+body {
+  overflow-x: hidden;
+}
+
 .pricing-ticket-primary{
   &:before, &:after{
     content: '';

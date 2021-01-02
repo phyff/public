@@ -13,7 +13,7 @@
     "deploy": "gh-pages -d build"
   },
   "author": "Robert May",
-  "homepage": "http://phyff.github.io/public",
+  "homepage": "https://phyff.com",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.11.1",
