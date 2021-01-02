@@ -58,6 +58,7 @@ module.exports = (env) => ({
   plugins: [
     new CopyWebpackPlugin([
       { from: 'public/index.html' },
+      { from: 'public/404.html' },
       { from: 'public/css/', to: 'css/' },
       { from: 'public/assets/', to: 'assets/' },
       { from: 'public/fonts/', to: 'fonts/' },
