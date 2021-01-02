@@ -8,9 +8,12 @@
     "build": "webpack --env.NODE_ENV=production",
     "start": "node server.js",
     "gulp": "gulp",
-    "lint": "eslint \"src/**/*\" --fix --ext .js --ext .jsx --ignore-pattern \"src/assets/\""
+    "lint": "eslint \"src/**/*\" --fix --ext .js --ext .jsx --ignore-pattern \"src/assets/\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Robert May",
+  "homepage": "http://phyff.github.io/public",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.11.1",
@@ -28,6 +31,7 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.0.8",
+    "gh-pages": "^3.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
