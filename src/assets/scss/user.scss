@@ -4,7 +4,7 @@
 //
 // Place your own custom CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
 
-body {
+body #root {
   overflow-x: hidden;
 }
 
@@ -34,7 +34,7 @@ body {
     display: block;
     width: 101%;
     height: 92.5%;
-    border-top: 1em dashed $primary;
+    border-top: 1.3em dashed $primary;
     border-bottom: 1.3em dashed $primary;
     position: absolute;
     left: -.5%;
