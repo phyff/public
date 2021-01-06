@@ -3,7 +3,7 @@ import attendHeader from '../../data/attendHeader';
 import Header from '../../components/Header';
 import withBaseLayout from '../../hocs/withBaseLayout';
 import EventDetails from './components/EventDetails';
-import SignUp from './components/SignUp';
+import SignUp from './components/SignUp/SignUp';
 import Schedule from './components/Schedule/Schedule';
 
 const Attend = () => (

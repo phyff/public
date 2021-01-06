@@ -7,8 +7,8 @@ const NoWorkshops = () => (
       <img src={saas2} alt="No Workshops" style={{ width: '35%' }} className="mb-5" />
       <h3 className="h3">No Workshops Scheduled</h3>
       <p className="lead text-center">
-        We currently don&apos;t have any workshops scheduled for this year&apos;s
-        event. We&apos;re always planning, so check again soon to see if there
+        We currently don't have any workshops scheduled for this year's
+        event. We're always planning, so check again soon to see if there
         are any workshops that pique your interest!
       </p>
     </div>

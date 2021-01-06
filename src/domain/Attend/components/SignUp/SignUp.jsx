@@ -2,15 +2,19 @@ import React from 'react';
 import {
   Col, Container, Row,
 } from 'react-bootstrap';
-import Svg from '../../../components/Svg';
-import divider from '../../../assets/img/dividers/divider-5.svg';
-import blob1 from '../../../assets/img/decorations/deco-blob-1.svg';
-import dots5 from '../../../assets/img/decorations/deco-dots-5.svg';
-import useEventInfo from '../../../hooks/useEventInfo';
-import Loading from '../../../components/Loading';
+import Svg from '../../../../components/Svg';
+import divider from '../../../../assets/img/dividers/divider-5.svg';
+import blob1 from '../../../../assets/img/decorations/deco-blob-1.svg';
+import dots5 from '../../../../assets/img/decorations/deco-dots-5.svg';
+import useEventInfo from '../../../../hooks/useEventInfo';
+import Loading from '../../../../components/Loading';
+import signIn2 from '../../../../assets/img/content/sign-in2.jpg';
+import signIn from '../../../../assets/img/content/sign-in.jpg';
+import poster4 from '../../../../assets/img/content/phyff-poster-4.png';
+import SignInCollage from './SignInCollage';
 
 const SignUp = () => {
-  const { signup } = useEventInfo();
+  const { signup, isLoaded } = useEventInfo();
 
   return (
     <section className="bg-primary-3 has-divider">
@@ -24,17 +28,35 @@ const SignUp = () => {
                   Festival using the attached registration form. You can only
                   fill out this form once.
                 </p>
-                <a href={signup} className="lead hover-arrow">
-                  Open in Google Forms
-                </a>
+                {isLoaded && (
+                  signup ? (
+                    <a href={signup} className="lead hover-arrow">
+                      Open in Google Forms
+                    </a>
+                  )
+                    : (
+                      <p className="lead font-weight-bold">
+                        There currently isn't a sign-up form available. Check back soon!
+                      </p>
+                    )
+                )}
               </Col>
               <Col xl={6} md={6} className="mb-lg-n7 layer-3" data-aos="fade-left">
-                {signup ? (
-                  <iframe
-                    title="Sign Up Form"
-                    src={signup}
-                    className="min-vh-70 h-100 w-100 p-0 m-0 border-0 card card-body"
-                  />
+                {/* eslint-disable-next-line no-nested-ternary */}
+                {isLoaded ? (
+                  signup ? (
+                    <iframe
+                      title="Sign Up Form"
+                      src={signup}
+                      className="min-vh-70 h-100 w-100 p-0 m-0 border-0 card card-body"
+                    />
+                  ) : (
+                    <div
+                      className="min-vh-70 h-100 w-100 p-0 m-0"
+                    >
+                      <SignInCollage />
+                    </div>
+                  )
                 )
                   : (
                     <div className="min-vh-70 h-100 w-100 p-0 m-0 border-0 card card-body justify-content-center">

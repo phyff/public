@@ -42,7 +42,7 @@ const Participate = () => (
               <span className="h1 d-block">Attend</span>
               <p className="lead pr-xl-3">
                 Attend any workshop and event throughout the Fest. Whether you make films or
-                just like watching them, we&apos;d love to see you there.
+                just like watching them, we'd love to see you there.
               </p>
               <Link to="/attend" className="btn btn-lg mt-2 btn-white">Sign Up</Link>
             </div>

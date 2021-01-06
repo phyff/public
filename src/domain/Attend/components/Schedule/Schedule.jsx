@@ -30,7 +30,7 @@ const Schedule = () => {
               Workshops with film industry professionals are scheduled throughout
               the day, covering a wide variety of common and niche filmmaking
               topics. Whether you want to learn about how films are made or are
-              interested in making your own, we&apos;d love to see you at our workshops.
+              interested in making your own, we'd love to see you at our workshops.
             </p>
           </Col>
         </Row>

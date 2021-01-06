@@ -39,7 +39,7 @@ const EventDetails = () => {
                   <h4>Who?</h4>
                   <p>
                     You! The Fest is free and open to all high-school students.
-                    Whether you make films or just like watching them we&apos;d love
+                    Whether you make films or just like watching them we'd love
                     to see you at the Fest. Submissions are open to high schoolers,
                     14 to 19 years of age.
                   </p>
