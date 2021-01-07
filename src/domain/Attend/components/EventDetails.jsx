@@ -8,6 +8,7 @@ import clock from '../../../assets/img/icons/theme/home/clock.svg';
 import earth from '../../../assets/img/icons/theme/home/earth.svg';
 import user from '../../../assets/img/icons/theme/general/user.svg';
 import question from '../../../assets/img/icons/theme/code/question-circle.svg';
+import warning from '../../../assets/img/icons/theme/code/warning-2.svg';
 import dots3 from '../../../assets/img/decorations/deco-dots-2.svg';
 import blob13 from '../../../assets/img/decorations/deco-blob-13.svg';
 import blob2 from '../../../assets/img/decorations/deco-blob-2.svg';
@@ -16,6 +17,7 @@ import useEventInfo from '../../../hooks/useEventInfo';
 
 const EventDetails = () => {
   const { date, address } = useEventInfo();
+  const covid = true;
 
   return (
     <section className="bg-primary has-divider">
@@ -85,7 +87,7 @@ const EventDetails = () => {
                     The Fest will take place on&nbsp;
                     <strong>{moment(date?.toDate()).format('dddd, MMMM Do YYYY')}</strong>&nbsp;
                     from&nbsp;
-                    <strong>12:00 pm to 6:00 pm.</strong>&nbsp;
+                    <strong>11:00 pm to 5:00 pm.</strong>&nbsp;
                     You can arrive and leave at any time. We
                     recommend staying for the entire event; there are workshops and screenings
                     scheduled throughout the day!
@@ -105,13 +107,34 @@ const EventDetails = () => {
                       alt="earth"
                     />
                   </div>
-                  <h4>Where?</h4>
-                  <p>
-                    The Fest is hosted on the campus of&nbsp;
-                    <a href={`https://www.google.com/maps/search/?api=1&query=${address}`}>Germantown Friends School</a>,
-                    in the Sharpless building. There will be signs guiding you around campus on the
-                    day of the event.
-                  </p>
+                  <h4>{covid && (
+                  <Svg
+                    className="icon icon-md bg-primary"
+                    externalClassnames="d-inline-block"
+                    src={warning}
+                    alt="earth"
+                  />
+                  )}
+                    Where?
+                  </h4>
+                  {
+                    covid ? (
+                      <p>
+                        The Fest is by&nbsp;
+                        <a href={`https://www.google.com/maps/search/?api=1&query=${address}`} target="_blank">
+                          Germantown Friends School, located in Philadelphia, Pennsylvania
+                        </a>.
+                        Due to COVID restrictions, this year's event will be all virtual.
+                      </p>
+                    ) : (
+                      <p>
+                        The Fest is hosted on the campus of&nbsp;
+                        <a href={`https://www.google.com/maps/search/?api=1&query=${address}`} target="_blank">Germantown Friends School</a>,
+                        in the Sharpless building. There will be signs
+                        guiding you around campus on the day of the event.
+                      </p>
+                    )
+                  }
                 </div>
               </Col>
             </Row>
