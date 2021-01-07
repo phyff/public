@@ -5,7 +5,7 @@
 PHYFF is a student-run event dedicated to helping teenage creatives find their voice in a rapidly expanding community of young filmmakers. The Festival is free to attend for all high school students and is being hosted at Germantown Friends School.
 
 ![sitepreview.png](src/assets/img/content/sitepreview.png)
-*Soon hosted at **[phyff.com](https://phyff.com)***
+*Hosted at **[phyff.com](https://phyff.com)***
 
 <hr />
 
