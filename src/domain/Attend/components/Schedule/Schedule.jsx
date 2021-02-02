@@ -48,12 +48,13 @@ const Schedule = () => {
                   <Col>
                     <span className="h6 mb-0 text-muted">Presenter</span>
                   </Col>
+                  <Col className="d-none d-md-block" />
                 </Row>
                 <ListGroup
                   variant="flush"
                 >
                   {workshops
-                    .sort((a, b) => a.time - b.time)
+                    .sort((a, b) => (a.time ?? 0) - (b.time ?? 0))
                     .map((workshop, index) => (
                       <ScheduleWorkshop
                         workshop={workshop}
