@@ -7,7 +7,7 @@ const enforce = require('express-sslify');
 
 const app = express();
 
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
+if (process.env.NODE_ENV === 'production') app.use(enforce.HTTPS({ trustProtoHeader: true }));
 app.use(cors());
 app.use(compression());
 app.use(helmet.contentSecurityPolicy({
