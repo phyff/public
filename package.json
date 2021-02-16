@@ -9,7 +9,7 @@
     "start": "node server.js",
     "gulp": "gulp",
     "lint": "eslint \"src/**/*\" --fix --ext .js --ext .jsx --ignore-pattern \"src/assets/\"",
-    "predeploy": "npm run build",
+    "predeploy": "yarn run build && echo 'phyff.com' > ./build/CNAME",
     "deploy": "gh-pages -d build"
   },
   "author": "Robert May",
