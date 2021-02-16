@@ -22,6 +22,7 @@ const Schedule = ({ year }) => {
         ? (
           <ScheduleTable
             workshops={workshops}
+            displayTime
           />
         )
         : displayIfEmpty}

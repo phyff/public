@@ -7,7 +7,7 @@ import workshopType from '../../../../types/workshop';
 const ScheduleTable = ({ workshops, displayTime }) => (
   <>
     <Row className="no-gutters d-none d-md-flex bg-white py-3">
-      <Col xl={7} md={6}>
+      <Col xl={6} md={5}>
         <span className="h6 mb-0 text-muted">Workshop</span>
       </Col>
       { displayTime && (
@@ -24,7 +24,7 @@ const ScheduleTable = ({ workshops, displayTime }) => (
       variant="flush"
     >
       {workshops
-        .sort((a, b) => (a.time ?? 0) - (b.time ?? 0))
+        .sort((a, b) => (a.time ?? Number.MAX_VALUE) - (b.time ?? Number.MAX_VALUE))
         .map((workshop, index) => (
           <ScheduleWorkshop
             workshop={workshop}

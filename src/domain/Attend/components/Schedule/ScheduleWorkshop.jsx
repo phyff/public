@@ -11,19 +11,22 @@ import Svg from '../../../../components/Svg';
 
 const ScheduleWorkshop = ({ workshop, delay, displayTime }) => {
   const [open, setOpen] = useState(false);
+  const timeContents = workshop.allDay
+    ? (<span className="badge badge-pill badge-success">Both Times</span>)
+    : (<span>{workshop.time ? `${moment(new Date(workshop.time)).format('h:mm A')} - ${moment(new Date(workshop.endTime)).format('h:mm A')}` : 'TBD'}</span>);
 
   return (
     <ListGroup.Item
-      data-aos="fade-up"
-      data-aos-delay={delay}
+        data-aos="fade-up"
+        data-aos-delay={delay}
     >
       <Row className="no-gutters align-items-center py-3 text-dark">
-        <Col xl={7} md={6}>
+        <Col xl={6} md={5}>
           <h5 className="mb-0">{workshop.title}</h5>
         </Col>
         {displayTime && (
         <Col md>
-          <span>{workshop.time ? moment(new Date(workshop.time)).format('h:mm A') : 'TBD'}</span>
+          {timeContents}
         </Col>
         )}
         <Col md>
@@ -43,18 +46,18 @@ const ScheduleWorkshop = ({ workshop, delay, displayTime }) => {
             <span className="h6 mb-0">{workshop.speaker.name}</span>
           </div>
         </Col>
-        {workshop.description && (
-          <Col className="d-none d-md-block">
-            <Button
-              onClick={() => setOpen(!open)}
-              className="border-0 bg-transparent btn-light"
-              aria-controls="workshop-description"
-              aria-expanded={open}
-            >
-              <Svg className="icon bg-dark" src={control} alt="Control" style={{ transform: `rotate(${open ? 0.5 : 0.25}turn)`, transition: '0.2s' }} />
-            </Button>
-          </Col>
-        )}
+        <Col className="d-none d-md-block">
+          {workshop.description && (
+          <Button
+            onClick={() => setOpen(!open)}
+            className="border-0 bg-transparent btn-light"
+            aria-controls="workshop-description"
+            aria-expanded={open}
+          >
+            <Svg className="icon bg-dark" src={control} alt="Control" style={{ transform: `rotate(${open ? 0.5 : 0.25}turn)`, transition: '0.2s' }} />
+          </Button>
+          )}
+        </Col>
       </Row>
       {workshop.description && (
         <Collapse in={open}>

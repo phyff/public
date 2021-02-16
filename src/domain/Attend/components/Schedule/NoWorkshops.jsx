@@ -3,9 +3,13 @@ import saas2 from '../../../../assets/img/saas-2.svg';
 import useWorkshops from '../../../../hooks/useWorkshops';
 import Loading from '../../../../components/Loading';
 import ScheduleTable from './ScheduleTable';
+import useEventInfo from '../../../../hooks/useEventInfo';
 
 const NoWorkshops = () => {
-  const { workshops, isLoaded } = useWorkshops(new Date().getFullYear() - 1);
+  const { date } = useEventInfo();
+  const currentYear = date?.toDate().getFullYear();
+
+  const { workshops, isLoaded } = useWorkshops(currentYear - 1);
 
   return (
     <div>

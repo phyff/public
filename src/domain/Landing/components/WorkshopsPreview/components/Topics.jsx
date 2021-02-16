@@ -41,10 +41,13 @@ const Topics = ({ workshops, count }) => {
               }`}
             >
               {workshop.speaker.image && (
-                <img
-                  className="icon-round mb-3 mb-md-4 icon bg-primary layer-2"
-                  src={workshop.speaker.image}
-                  alt={workshop.speaker.name}
+                <div
+                  style={{
+                    backgroundImage: `url(${workshop.speaker.image})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center center',
+                  }}
+                  className="avatar avatar-lg mb-3 mb-md-4 bg-primary layer-2"
                 />
               )}
               <h5 className="mb-0 layer-2">{workshop.title}</h5>
