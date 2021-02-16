@@ -34,7 +34,6 @@ const useWorkshops = (year) => {
         });
       });
   }, [year, currentYear]);
-
   return workshops;
 };
 
