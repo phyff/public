@@ -4,14 +4,14 @@ import Header from '../../components/Header';
 import withBaseLayout from '../../hocs/withBaseLayout';
 import EventDetails from './components/EventDetails';
 import SignUp from './components/SignUp/SignUp';
-import Schedule from './components/Schedule/Schedule';
+import ScheduleContainer from './components/Schedule/ScheduleContainer';
 
 const Attend = () => (
   <>
     <Header data={attendHeader} />
     <SignUp />
     <EventDetails />
-    <Schedule />
+    <ScheduleContainer />
   </>
 );
 

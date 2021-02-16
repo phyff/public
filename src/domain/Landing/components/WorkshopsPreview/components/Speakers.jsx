@@ -23,7 +23,16 @@ const Speakers = ({ workshops }) => (
           key={`wp-s-${workshop.title}`}
         >
           {workshop.speaker.image
-            ? <img src={workshop.speaker.image} alt={workshop.speaker.name} className="avatar avatar-xlg mr-3" />
+            ? (
+              <div
+                style={{
+                  backgroundImage: `url(${workshop.speaker.image})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center center',
+                }}
+                className="avatar avatar-sm mr-3"
+              />
+            )
             : <Svg src={profile} alt={workshop.speaker.name} className="avatar avatar-xlg icon bg-primary mr-3" />}
           <div>
             <h5 className="mb-0">{workshop.speaker.name}</h5>
