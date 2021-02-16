@@ -27,7 +27,10 @@ const useWorkshops = (year) => {
             speaker: (await db.collection('speakers').doc(workshop.speaker).get())?.data(),
           })));
 
+        const workshopsDoc = (await db.collection('event').doc('workshops').get())?.data();
+
         setWorkshops({
+          ...workshopsDoc,
           workshops: data,
           isEmpty: snapshot.empty,
           isLoaded: true,

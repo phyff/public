@@ -9,7 +9,7 @@ import winnerType from '../../../../types/winner';
 
 const WinnerRow = ({ winner, delay }) => {
   const {
-    title, director, local, place, url,
+    title, director, local, place, url, specialAward,
   } = winner || {};
   const placeColors = ['gold', 'silver', 'darkgoldenrod'];
 
@@ -37,21 +37,34 @@ const WinnerRow = ({ winner, delay }) => {
             </a>
           )}
         </Col>
-        {local && (
-          <Col md={1} sm={3} className="text-center mb-1">
-            <OverlayTrigger
-              placement="right"
-              delay={{ show: 400, hide: 250 }}
-              overlay={(props) => (
-                <Tooltip {...props}>
-                  <strong>{title}</strong> was created by a filmmaker from the Philadelphia area.
-                </Tooltip>
-              )}
-            >
-              <span className="badge badge-pill badge-primary-2 m-1">Local</span>
-            </OverlayTrigger>
-          </Col>
-        )}
+        <Col md={1} sm={3} className="text-center mb-1">
+          {local && (
+          <OverlayTrigger
+            placement="right"
+            delay={{ show: 400, hide: 250 }}
+            overlay={(props) => (
+              <Tooltip {...props}>
+                <strong>{title}</strong> was created by a filmmaker from the Philadelphia area.
+              </Tooltip>
+            )}
+          >
+            <span className="badge badge-pill badge-primary-2 m-1">Local</span>
+          </OverlayTrigger>
+          )}
+          {specialAward && (
+          <OverlayTrigger
+            placement="right"
+            delay={{ show: 400, hide: 250 }}
+            overlay={(props) => (
+              <Tooltip {...props}>
+                <strong>{title}</strong> won the "{specialAward}" award.
+              </Tooltip>
+            )}
+          >
+            <span className="badge badge-pill badge-warning m-1">Special</span>
+          </OverlayTrigger>
+          )}
+        </Col>
         <Col md={5} sm={10} className="text-center text-md-right ml-md-auto">
           <span className="w-100">{director}</span>
         </Col>

@@ -6,7 +6,9 @@ import NoWorkshops from './NoWorkshops';
 import Loading from '../../../../components/Loading';
 
 const Schedule = ({ year }) => {
-  const { workshops, isLoaded } = useWorkshops(year);
+  const {
+    workshops, workshopsConfirmed, timesConfirmed, isLoaded,
+  } = useWorkshops(year);
 
   const displayIfEmpty = isLoaded
     ? <NoWorkshops />
@@ -18,11 +20,11 @@ const Schedule = ({ year }) => {
 
   return (
     <div className="card card-body layer-2">
-      {workshops.length > 0
+      {(workshops.length > 0 && workshopsConfirmed)
         ? (
           <ScheduleTable
             workshops={workshops}
-            displayTime
+            displayTime={timesConfirmed}
           />
         )
         : displayIfEmpty}

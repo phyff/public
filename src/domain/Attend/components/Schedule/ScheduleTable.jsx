@@ -28,7 +28,6 @@ const ScheduleTable = ({ workshops, displayTime }) => (
         .map((workshop, index) => (
           <ScheduleWorkshop
             workshop={workshop}
-            delay={index * 50}
             key={workshop.title}
             displayTime={displayTime}
           />

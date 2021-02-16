@@ -6,4 +6,5 @@ export default PropTypes.shape({
   url: PropTypes.string,
   local: PropTypes.bool,
   place: PropTypes.number,
+  specialAward: PropTypes.string,
 });

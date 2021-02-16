@@ -18,7 +18,7 @@ const ScheduleWorkshop = ({ workshop, delay, displayTime }) => {
   return (
     <ListGroup.Item
         data-aos="fade-up"
-        data-aos-delay={delay}
+        data-aos-delay={delay ?? 0}
     >
       <Row className="no-gutters align-items-center py-3 text-dark">
         <Col xl={6} md={5}>
