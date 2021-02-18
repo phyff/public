@@ -5,5 +5,6 @@ export default PropTypes.shape({
   photoURL: PropTypes.string,
   biography: PropTypes.string,
   title: PropTypes.string,
+  email: PropTypes.string,
   order: PropTypes.number,
 });

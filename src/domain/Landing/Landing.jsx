@@ -5,11 +5,13 @@ import Explanation from './components/Explanation/Explanation';
 import WorkshopsPreview from './components/WorkshopsPreview/WorkshopsPreview';
 import Participate from './components/Participate';
 import LastYearWinners from './components/LastYearWinners/LastYearWinners';
+import Keynote from './components/Keynote/Keynote';
 
 const Landing = () => (
   <>
     <Splash />
     <Explanation />
+    <Keynote />
     <WorkshopsPreview />
     <LastYearWinners />
     <Participate />

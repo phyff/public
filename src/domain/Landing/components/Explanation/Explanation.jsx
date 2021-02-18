@@ -24,7 +24,7 @@ const Explanation = () => (
       </Row>
     </Container>
     <div className="divider">
-      <Svg className="bg-white" src={divider} alt="divider graphic" />
+      <Svg className="bg-primary-2-alt" src={divider} alt="divider graphic" />
     </div>
   </section>
 );
