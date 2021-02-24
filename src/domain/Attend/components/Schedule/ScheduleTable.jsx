@@ -1,10 +1,10 @@
 import React from 'react';
 import { Col, ListGroup, Row } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import ScheduleWorkshop from './ScheduleWorkshop';
-import workshopType from '../../../../types/workshop';
+import ScheduleEntry from './ScheduleEntry';
+import scheduleEntryType from '../../../../types/scheduleEntry';
 
-const ScheduleTable = ({ workshops, displayTime }) => (
+const ScheduleTable = ({ entries, displayTime }) => (
   <>
     <Row className="no-gutters d-none d-md-flex bg-white py-3">
       <Col xl={6} md={5}>
@@ -23,12 +23,12 @@ const ScheduleTable = ({ workshops, displayTime }) => (
     <ListGroup
       variant="flush"
     >
-      {workshops
+      {entries
         .sort((a, b) => (a.time ?? Number.MAX_VALUE) - (b.time ?? Number.MAX_VALUE))
-        .map((workshop, index) => (
-          <ScheduleWorkshop
-            workshop={workshop}
-            key={workshop.title}
+        .map((entry, index) => (
+          <ScheduleEntry
+            entry={entry}
+            key={entry.title}
             displayTime={displayTime}
           />
         ))}
@@ -37,7 +37,7 @@ const ScheduleTable = ({ workshops, displayTime }) => (
 );
 
 ScheduleTable.propTypes = {
-  workshops: PropTypes.arrayOf(workshopType),
+  entries: PropTypes.arrayOf(scheduleEntryType),
   displayTime: PropTypes.bool,
 };
 
