@@ -10,7 +10,29 @@ const navItems = [
     },
     {
       name: 'Virtual Screening Room',
-      to: '/virtual-screening-room',
+      to: null,
+      dropdownContent: [
+        {
+          name: 'All Categories',
+          to: '/virtual-screening-room',
+        },
+        {
+          name: 'Award Winners',
+          to: '/virtual-screening-room/award-winners',
+        },
+        {
+          name: 'Reels',
+          to: '/virtual-screening-room/reels',
+        },
+        {
+          name: 'Films',
+          to: '/virtual-screening-room/films',
+        },
+        {
+          name: 'Screenplays',
+          to: '/virtual-screening-room/screenplays',
+        },
+      ],
     },
   ],
   [

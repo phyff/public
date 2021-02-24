@@ -1,6 +1,9 @@
 import React from 'react';
-import { Button, Navbar, Nav } from 'react-bootstrap';
+import {
+  Button, Navbar, Nav, Dropdown,
+} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { LinkContainer } from 'react-router-bootstrap';
 import { useLocation } from 'react-router';
 import menu from '../assets/img/icons/interface/menu.svg';
 import logoMobile from '../assets/img/logo-mobile.png';
@@ -24,10 +27,40 @@ const BasicNavbar = () => {
     isDark: true,
   };
 
-  const generateNavItem = ({ to, name }) => (
-    <Nav.Link as={Link} to={to} key={name}>
-      {name}
+  const CustomMenu = React.forwardRef(({ children, onClick }, ref) => (
+    <Nav.Link
+      as={Link}
+      onClick={(e) => {
+        e.preventDefault();
+        onClick(e);
+      }}
+      ref={ref}
+    >
+      {children}
     </Nav.Link>
+  ));
+
+  const generateNavItem = ({ to, name, dropdownContent }) => (
+    <>
+      {dropdownContent ? (
+        <Dropdown>
+          <Dropdown.Toggle as={CustomMenu}>
+            {name}
+          </Dropdown.Toggle>
+          <Dropdown.Menu>
+            {dropdownContent.map((link) => (
+              <LinkContainer to={link.to} activeClassName="">
+                <Dropdown.Item>{link.name}</Dropdown.Item>
+              </LinkContainer>
+            ))}
+          </Dropdown.Menu>
+        </Dropdown>
+      ) : (
+        <Nav.Link as={Link} to={to} key={name}>
+          {name}
+        </Nav.Link>
+      )}
+    </>
   );
 
   const generateNavButton = ({ to, name }, index) => (
