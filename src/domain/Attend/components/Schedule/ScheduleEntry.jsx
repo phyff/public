@@ -15,8 +15,6 @@ const ScheduleEntry = ({ entry, delay, displayTime }) => {
     ? (<span className="badge badge-pill badge-success">Both Times</span>)
     : (<span>{entry.time ? `${moment(new Date(entry.time)).format('h:mm A')} - ${moment(new Date(entry.endTime)).format('h:mm A')}` : 'TBD'}</span>);
 
-  console.log(entry);
-
   return (
     <ListGroup.Item
         data-aos="fade-up"
