@@ -6,7 +6,7 @@ import attend from '../../../../../assets/img/content/attend.jpg';
 import submit from '../../../../../assets/img/content/submit.jpg';
 import learn from '../../../../../assets/img/content/learn.jpg';
 import more from '../../../../../assets/img/content/more.jpg';
-import workshopType from '../../../../../types/workshop';
+import workshopType from '../../../../../types/scheduleEntry';
 
 const Topics = ({ workshops, count }) => {
   const getBackgroundImage = (index) => {

@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import Svg from '../../../../../components/Svg';
 import profile from '../../../../../assets/img/icons/theme/general/user.svg';
-import workshopType from '../../../../../types/workshop';
+import workshopType from '../../../../../types/scheduleEntry';
 
 const Speakers = ({ workshops }) => (
   <Container>

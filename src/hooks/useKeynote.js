@@ -10,7 +10,7 @@ const useKeynote = (year) => {
     db.collection('event')
       .doc('keynote').get()
       .then(async (doc) => {
-        if (doc.exists) {
+        if (doc.exists && year) {
           const keynoteId = doc.data()[year];
           setInfo({
             keynote: (await db.collection('speakers').doc(keynoteId).get())?.data(),

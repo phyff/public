@@ -18,7 +18,7 @@ const NoWorkshops = () => {
         <h3 className="h3">Workshops To Be Announced</h3>
         <p className="lead text-center mx-3">
           We're working hard to schedule and confirm workshops for this year's
-          event. Check out last year's workshops:
+          event. Check out last year's schedule:
         </p>
         {isLoaded ? (
           <div className="w-100 mx-0 border-0 p-0">

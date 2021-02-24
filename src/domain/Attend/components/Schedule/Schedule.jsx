@@ -4,13 +4,18 @@ import ScheduleTable from './ScheduleTable';
 import useWorkshops from '../../../../hooks/useWorkshops';
 import NoWorkshops from './NoWorkshops';
 import Loading from '../../../../components/Loading';
+import useSchedule from '../../../../hooks/useSchedule';
 
 const Schedule = ({ year }) => {
   const {
     workshops, workshopsConfirmed, timesConfirmed, isLoaded,
   } = useWorkshops(year);
 
-  const displayIfEmpty = isLoaded
+  const {
+    schedule, scheduleConfirmed, scheduleIsLoaded,
+  } = useSchedule(year);
+
+  const displayIfEmpty = isLoaded && scheduleIsLoaded
     ? <NoWorkshops />
     : (
       <div className="min-vh-70 h-100 w-100 p-0 m-0 border-0 card card-body justify-content-center">
@@ -23,7 +28,7 @@ const Schedule = ({ year }) => {
       {(workshops.length > 0 && workshopsConfirmed)
         ? (
           <ScheduleTable
-            workshops={workshops}
+            entries={workshops.concat(scheduleConfirmed && schedule)}
             displayTime={timesConfirmed}
           />
         )

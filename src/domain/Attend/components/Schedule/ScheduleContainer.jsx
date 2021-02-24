@@ -14,8 +14,8 @@ const ScheduleContainer = () => (
         <Col>
           <h2 className="h1 mb-sm-0">Schedule</h2>
           <p className="lead">
-            Workshops with film industry professionals are scheduled throughout
-            the day, covering a wide variety of common and niche filmmaking
+            Workshops and panels with film industry professionals are scheduled throughout
+            the day, covering a wide variety of general and niche filmmaking
             topics. Whether you want to learn about how films are made or are
             interested in making your own, we'd love to see you at our workshops.
           </p>
