@@ -3,6 +3,7 @@ import withAuth from '../../../hocs/withAuth';
 import screeningRoomHeader from '../../../data/screeningRoomHeader';
 import Header from '../../../components/Header';
 import withBaseLayout from '../../../hocs/withBaseLayout';
+import IFrame from '../../../components/IFrame';
 
 const AwardWinners = function AwardWinners() {
   return (
@@ -14,7 +15,7 @@ const AwardWinners = function AwardWinners() {
             <div className="col-xl-10">
               <h2 className="h1 mb-4">Award Winners</h2>
               <hr />
-              {/*<IFrame title="Award Winners" src="https://vimeo.com/showcase/8172488/embed" /> */}
+              <IFrame title="Award Winners" src="https://vimeo.com/showcase/8178137/embed" />
             </div>
           </div>
         </div>
