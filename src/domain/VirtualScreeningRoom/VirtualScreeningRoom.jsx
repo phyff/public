@@ -1,35 +1,37 @@
 import React from 'react';
+import { LinkContainer } from 'react-router-bootstrap';
 import withAuth from '../../hocs/withAuth';
-import IFrame from '../../components/IFrame';
-import mediaHeader from '../../data/mediaHeader';
+import screeningRoomHeader from '../../data/screeningRoomHeader';
 import Header from '../../components/Header';
 import withBaseLayout from '../../hocs/withBaseLayout';
+import Svg from '../../components/Svg';
+import screeningRoomItems from '../../data/screeningRoomItems';
 
 const VirtualScreeningRoom = function VirtualScreeningRoom() {
   return (
     <>
-      <Header data={mediaHeader} />
-      {/*<IFrame title="Reels" src="https://vimeo.com/showcase/8172488/embed" />*/}
+      <Header data={screeningRoomHeader} />
       <section>
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-xl-10">
-              <h2 className="h1 mb-4">Selected Films</h2>
-              <hr />
-              <p className="h3">Narrative Shorts</p>
-              <IFrame title="Narrative Shorts" src="https://vimeo.com/showcase/8172488/embed" />
-              <p className="h3">Experimental Films</p>
-              <IFrame title="Experimental Films" src="https://vimeo.com/showcase/8172476/embed" />
-              <p className="h3">Documentary Films</p>
-              <IFrame title="Documentary Films" src="https://vimeo.com/showcase/8172471/embed" />
-              <p className="h3">Special Awards</p>
-              <IFrame title="Special Awards" src="https://vimeo.com/showcase/8172466/embed" />
-              <p className="h3">Local Selections</p>
-              <IFrame title="Local Selections" src="https://vimeo.com/showcase/8172456/embed" />
+            <div className="col-lg-10 col-xl-8">
+              {screeningRoomItems.map((item) => (
+                <LinkContainer to={item.href} style={{ cursor: 'pointer' }}>
+                  <div className="card card-body flex-row align-items-center hover-shadow-sm">
+                    <div className="icon-round icon-round-lg bg-primary mx-md-4">
+                      <Svg src={item.svg} className="icon icon-lg bg-primary" alt="icon" />
+                    </div>
+                    <div className="pl-4">
+                      <h3 className="mb-1">{item.title}</h3>
+                      <span>{item.subtitle}</span>
+                    </div>
+                  </div>
+                </LinkContainer>
+              ))}
             </div>
           </div>
         </div>
-    </section>
+      </section>
     </>
   );
 };
