@@ -9,8 +9,8 @@ const navItems = [
       to: '/about',
     },
     {
-      name: 'Screenplays',
-      to: '/screenplays',
+      name: 'Media',
+      to: '/media',
     },
   ],
   [
