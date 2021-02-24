@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Formik, Form, Field } from 'formik';
 import { withRouter } from 'react-router';
+import { Alert } from 'react-bootstrap';
+import usePassword from '../../hooks/usePassword';
 
 const Auth = function Auth({ history }) {
+  const password = usePassword();
+  const [error, setError] = useState(false);
+
   return (
     <section className="min-vh-100 py-5">
       <div className="container">
@@ -11,15 +16,21 @@ const Auth = function Auth({ history }) {
             <div className="text-center mb-4">
               <h1 className="mb-1">This material is private</h1>
               <span>Enter password to gain access</span>
+              { error && <Alert variant="danger" className="mt-3">The password you have entered is incorrect. Please try again.</Alert>}
             </div>
             <Formik
               initialValues={{
                 password: '',
               }}
               onSubmit={(values, { resetForm }) => {
+                setError(false);
                 resetForm();
-                localStorage.setItem('authentication', values.password);
-                history.push('/media');
+                if (values.password === password) {
+                  localStorage.setItem('authentication', values.password);
+                  history.push('/media');
+                } else {
+                  setError(true);
+                }
               }}
             >
               <Form>
