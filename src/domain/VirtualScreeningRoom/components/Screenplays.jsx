@@ -15,6 +15,84 @@ const Screenplays = function Screenplays() {
             <div className="col-xl-10">
               <h2 className="h1 mb-4">Screenplays</h2>
               <hr />
+              <p className="h3">A Day With Payne by Alex Colocousis</p>
+              <IFrame
+                title="A Day with Payne"
+                style={{ border: 'none', width: '100%', height: '326px' }}
+                src="//e.issuu.com/embed.html?backgroundColor=%23bbd6d8&backgroundColorFullscreen=%23bbd6d8&d=adaywithpaynedraft3&hideIssuuLogo=true&u=germantownfds"
+              />
+              <p className="h3">A La Mode by Kaya Trefz</p>
+              <IFrame
+                title="A Day with Payne"
+                style={{ border: 'none', width: '100%', height: '326px' }}
+                src="//e.issuu.com/embed.html?backgroundColor=%23bbd6d8&backgroundColorFullscreen=%23bbd6d8&d=alamodesixthdraft&hideIssuuLogo=true&u=germantownfds"
+              />
+              <p className="h3">Boy on the Moon by Jake Lubin</p>
+              <IFrame
+                title="A Day with Payne"
+                style={{ border: 'none', width: '100%', height: '326px' }}
+                src="//e.issuu.com/embed.html?backgroundColor=%23bbd6d8&backgroundColorFullscreen=%23bbd6d8&d=boyonthemoon&hideIssuuLogo=true&u=germantownfds"
+              />
+              <p className="h3">Don’t Come Near Me by Christian Lee</p>
+              <IFrame
+                title="Don’t Come Near Me"
+                style={{ border: 'none', width: '100%', height: '326px' }}
+                src="//e.issuu.com/embed.html?backgroundColor=%23bbd6d8&backgroundColorFullscreen=%23bbd6d8&d=dontcomenearme&hideIssuuLogo=true&u=germantownfds"
+              />
+              <p className="h3">Driving Test by Graham Kohn</p>
+              <IFrame
+                title="Driving Test"
+                style={{ border: 'none', width: '100%', height: '326px' }}
+                src="//e.issuu.com/embed.html?backgroundColor=%23bbd6d8&backgroundColorFullscreen=%23bbd6d8&d=drivingtest&hideIssuuLogo=true&u=germantownfds"
+              />
+              <p className="h3">Outgrowing My Shoes by Kaya Trefz</p>
+              <IFrame
+                title="Outgrowing My Shoes"
+                style={{ border: 'none', width: '100%', height: '326px' }}
+                src="//e.issuu.com/embed.html?backgroundColor=%23bbd6d8&backgroundColorFullscreen=%23bbd6d8&d=outgrowingmyshoes&hideIssuuLogo=true&u=germantownfds"
+              />
+              <p className="h3">Ready, Set, Go! by Grace Raufer</p>
+              <IFrame
+                title="Ready, Set, Go!"
+                style={{ border: 'none', width: '100%', height: '326px' }}
+                src="//e.issuu.com/embed.html?backgroundColor=%23bbd6d8&backgroundColorFullscreen=%23bbd6d8&d=readysetgofinal&hideIssuuLogo=true&u=germantownfds"
+              />
+              <p className="h3">Sandwich Heist by Brody Bundis</p>
+              <IFrame
+                title="Sandwich Heist"
+                style={{ border: 'none', width: '100%', height: '326px' }}
+                src="//e.issuu.com/embed.html?backgroundColor=%23bbd6d8&backgroundColorFullscreen=%23bbd6d8&d=sandwichheist2&hideIssuuLogo=true&u=germantownfds"
+              />
+              <p className="h3">School Of Theft by Robert Madden</p>
+              <IFrame
+                title="School Of Theft"
+                style={{ border: 'none', width: '100%', height: '326px' }}
+                src="//e.issuu.com/embed.html?backgroundColor=%23bbd6d8&backgroundColorFullscreen=%23bbd6d8&d=schooloftheftofficialscreenplay&hideIssuuLogo=true&u=germantownfds"
+              />
+              <p className="h3">The Interview by Sean Park</p>
+              <IFrame
+                title="The Interview"
+                style={{ border: 'none', width: '100%', height: '326px' }}
+                src="//e.issuu.com/embed.html?backgroundColor=%23bbd6d8&backgroundColorFullscreen=%23bbd6d8&d=scripttheinterview3&hideIssuuLogo=true&u=germantownfds"
+              />
+              <p className="h3">The Bonus Baby by Feeney Lan</p>
+              <IFrame
+                title="The Bonus Baby"
+                style={{ border: 'none', width: '100%', height: '326px' }}
+                src="//e.issuu.com/embed.html?backgroundColor=%23bbd6d8&backgroundColorFullscreen=%23bbd6d8&d=thebonusbaby&hideIssuuLogo=true&u=germantownfds"
+              />
+              <p className="h3">The Roommate by Jake Lubin</p>
+              <IFrame
+                title="The Roommate"
+                style={{ border: 'none', width: '100%', height: '326px' }}
+                src="//e.issuu.com/embed.html?backgroundColor=%23bbd6d8&backgroundColorFullscreen=%23bbd6d8&d=theroommatev2&hideIssuuLogo=true&u=germantownfds"
+              />
+              <p className="h3">We All Make The Little Flowers Grow by Kaya L. Trefz</p>
+              <IFrame
+                title="We All Make The Little Flowers Grow"
+                style={{ border: 'none', width: '100%', height: '326px' }}
+                src="//e.issuu.com/embed.html?backgroundColor=%23bbd6d8&backgroundColorFullscreen=%23bbd6d8&d=weallmakethelittleflowersgrow&hideIssuuLogo=true&u=germantownfds"
+              />
             </div>
           </div>
         </div>
