@@ -8,6 +8,10 @@ const navItems = [
       name: 'About',
       to: '/about',
     },
+    {
+      name: 'Screenplays',
+      to: '/screenplays',
+    },
   ],
   [
     {

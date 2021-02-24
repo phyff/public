@@ -9,6 +9,7 @@ const About = lazy(() => import('./domain/About/About'));
 const Submit = lazy(() => import('./domain/Submit/Submit'));
 const Attend = lazy(() => import('./domain/Attend/Attend'));
 const Winners = lazy(() => import('./domain/Winners/Winners'));
+const Media = lazy(() => import('./domain/Media/Media'));
 
 const App = () => (
   <BrowserRouter>
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/about" exact component={About} />
           <Route path="/attend" exact component={Attend} />
           <Route path="/winners" exact component={Winners} />
+          <Route path="/media" exact component={Media} />
           <Route component={NotFound} />
         </Switch>
       </ScrollToTop>
