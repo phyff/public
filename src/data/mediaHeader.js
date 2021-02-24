@@ -1,10 +1,10 @@
 import awards from '../assets/img/content/awards-1-bw.jpg';
 
 const mediaHeader = {
-  title: 'Media',
+  title: 'Virtual Screening Room',
   image: awards,
   color: 'bg-primary-2',
-  caption: 'Reels, films, and screenplays.',
+  caption: 'Official Winners and Selections for the Philadelphia Youth Film Festival 2021.',
   dividerColor: 'bg-primary-alt',
   decoColors: {
     primary: 'bg-primary',

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const IFrame = function IFrame({ title, src }) {
   return (
@@ -15,6 +16,11 @@ const IFrame = function IFrame({ title, src }) {
       />
     </div>
   );
+};
+
+IFrame.propTypes = {
+  title: PropTypes.string,
+  src: PropTypes.string,
 };
 
 export default IFrame;

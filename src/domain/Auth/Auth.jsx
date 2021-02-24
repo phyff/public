@@ -27,7 +27,7 @@ const Auth = function Auth({ history }) {
                 resetForm();
                 if (values.password === password) {
                   localStorage.setItem('authentication', values.password);
-                  history.push('/media');
+                  history.push('/virtual-screening-room');
                 } else {
                   setError(true);
                 }

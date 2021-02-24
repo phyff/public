@@ -5,7 +5,7 @@ import mediaHeader from '../../data/mediaHeader';
 import Header from '../../components/Header';
 import withBaseLayout from '../../hocs/withBaseLayout';
 
-const Media = function Media() {
+const VirtualScreeningRoom = function VirtualScreeningRoom() {
   return (
     <>
       <Header data={mediaHeader} />
@@ -26,4 +26,4 @@ const Media = function Media() {
   );
 };
 
-export default withAuth(withBaseLayout(Media));
+export default withAuth(withBaseLayout(VirtualScreeningRoom));

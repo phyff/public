@@ -9,8 +9,8 @@ const navItems = [
       to: '/about',
     },
     {
-      name: 'Media',
-      to: '/media',
+      name: 'Virtual Screening Room',
+      to: '/virtual-screening-room',
     },
   ],
   [
