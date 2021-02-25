@@ -17,12 +17,12 @@ const navItems = [
           to: '/virtual-screening-room',
         },
         {
-          name: 'Award Winners',
-          to: '/virtual-screening-room/award-winners',
-        },
-        {
           name: 'Reels',
           to: '/virtual-screening-room/reels',
+        },
+        {
+          name: 'Award Winners',
+          to: '/virtual-screening-room/award-winners',
         },
         {
           name: 'Films',

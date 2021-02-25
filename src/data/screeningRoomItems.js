@@ -5,16 +5,16 @@ import screenplays from '../assets/img/icons/theme/files/file.svg';
 
 const screeningRoomItems = [
   {
-    title: 'Award Winners',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    svg: heart,
-    href: '/virtual-screening-room/award-winners',
-  },
-  {
     title: 'Reels',
     subtitle: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     svg: reels,
     href: '/virtual-screening-room/reels',
+  },
+  {
+    title: 'Award Winners',
+    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    svg: heart,
+    href: '/virtual-screening-room/award-winners',
   },
   {
     title: 'Films',
