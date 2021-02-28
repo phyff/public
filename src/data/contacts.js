@@ -20,8 +20,8 @@ export default (address) => [
   {
     name: 'instagram',
     icon: instagram,
-    text: '@phyff21',
-    href: 'https://www.instagram.com/phyff21/',
+    text: '@phillyyouthfilmfest',
+    href: 'https://www.instagram.com/phillyyouthfilmfest/',
   },
   {
     name: 'facebook',
