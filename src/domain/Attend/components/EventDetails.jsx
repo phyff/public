@@ -62,7 +62,7 @@ const EventDetails = () => {
                   </div>
                   <h4>What?</h4>
                   <p>
-                    The Fest features a keynote speaker, workshops with local professionals,
+                    The Fest features a keynote speaker, workshops with industry professionals,
                     and screenings/awards for the best submissions! The Fest is a great
                     opportunity to make connections or just chat with local filmmakers and
                     similarly passionate students.
@@ -87,8 +87,8 @@ const EventDetails = () => {
                     The Fest will take place on&nbsp;
                     <strong>{moment(date?.toDate()).format('dddd, MMMM Do YYYY')}</strong>&nbsp;
                     from&nbsp;
-                    <strong>11:00 pm to 5:00 pm.</strong>&nbsp;
-                    You can arrive and leave at any time. We
+                    <strong>11:00 am to 5:00 pm EST</strong>&nbsp;
+                     (Philadelphia). You can arrive and leave at any time. We
                     recommend staying for the entire event; there are workshops and screenings
                     scheduled throughout the day!
                   </p>
@@ -120,7 +120,7 @@ const EventDetails = () => {
                   {
                     covid ? (
                       <p>
-                        The Fest is by&nbsp;
+                        The Fest is hosted by&nbsp;
                         <a href={`https://www.google.com/maps/search/?api=1&query=${address}`} target="_blank">
                           Germantown Friends School, located in Philadelphia, Pennsylvania
                         </a>.
