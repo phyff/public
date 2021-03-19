@@ -71,7 +71,7 @@ const SubmissionDetails = () => (
             <p>
               All music copyright, talent, and location releases must be submitted
               with each entry. A valid high school ID of the most recent/current
-              ear you attended high school must be attached with your submission.
+              year you attended high school must be attached with your submission.
             </p>
           </Card.Body>
         </Card>
