@@ -17,9 +17,7 @@ const FilmFreeway = ({ submissionDeadline }) => {
         <Row className="justify-content-around o-hidden o-lg-visible mb-5">
           <Col xl={5} md={6} className="mb-4 mb-md-0" data-aos="fade">
             <h3 className="h1">{submissionsOpen ? 'Submissions Are Open!' : 'Submissions Are Closed'}</h3>
-            <p className="lead">Check back next fall to submit your film to the 2022 Philadelphia Youth Film Festival. We accept entries on
-              Film Freeway, the world's #1 way to enter film festivals and creative contests.
-              Visit our FilmFreeway page to submit and see more submission details.
+            <p className="lead">Submit your film by October 27th, 2021.
             </p>
             <a href="https://filmfreeway.com/phyff" className="lead hover-arrow">Visit our FilmFreeway
               page
