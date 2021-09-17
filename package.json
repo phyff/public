@@ -5,7 +5,7 @@
   "description": "The public website for the Philadelphia Youth Film Festival.",
   "scripts": {
     "dev": "webpack-dev-server --env.NODE_ENV=development --host 0.0.0.0",
-    "build": "webpack --env.NODE_ENV=production",
+    "build": "wkill -9 PIDebpack --env.NODE_ENV=production",
     "start": "node server.js",
     "gulp": "gulp",
     "lint": "eslint \"src/**/*\" --fix --ext .js --ext .jsx --ignore-pattern \"src/assets/\"",

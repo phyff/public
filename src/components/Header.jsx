@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import divider from '../assets/img/dividers/divider-3.svg';
 import dots from '../assets/img/decorations/deco-dots-2.svg';
 import dots3 from '../assets/img/decorations/deco-dots-3.svg';
@@ -45,7 +46,7 @@ const Header = ({ data }) => (
     <Container className="layer-2">
       <Row className="py-6 text-center justify-content-center align-items-center layer-2 text-light">
         <Col lg={10} xl={8}>
-          <h1 className="display-4">{data.title}</h1>
+          <h1 className="display-4">{window.location.pathname.split('/')[1] === 'submit' ? <a href="https://filmfreeway.com/phyff">{data.title}</a> : data.title}</h1>
           <p className="lead mb-0">{data.caption}</p>
         </Col>
       </Row>
