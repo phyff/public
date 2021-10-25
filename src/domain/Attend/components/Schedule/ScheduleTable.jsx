@@ -25,7 +25,7 @@ const ScheduleTable = ({ entries, displayTime }) => (
     >
       {entries
         .sort((a, b) => (a.time ?? Number.MAX_VALUE) - (b.time ?? Number.MAX_VALUE))
-        .map((entry, index) => (
+        .map((entry) => (
           <ScheduleEntry
             entry={entry}
             key={entry.title}
