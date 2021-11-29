@@ -24,8 +24,8 @@ const Splash = () => {
             <h5>{date && moment(date?.toDate()).format('dddd, MMMM Do YYYY')}</h5>
             <h1 className="display-3">Philadelphia Youth Film Festival</h1>
             <p className="lead mb-4">{venueName}</p>
-            <Link to="/submit" className="btn btn-primary btn-lg">
-              Submit
+            <Link to="/attend" className="btn btn-primary btn-lg">
+              Attend
             </Link>
           </Col>
         </Row>

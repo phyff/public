@@ -4,7 +4,7 @@
   "version": "1.2.1",
   "description": "The public website for the Philadelphia Youth Film Festival.",
   "scripts": {
-    "dev": "webpack-dev-server --env.NODE_ENV=development --host 0.0.0.0",
+    "dev": "webpack-dev-server --env.NODE_ENV=development --host 127.0.0.1",
     "build": "webpack --env.NODE_ENV=production",
     "start": "node server.js",
     "gulp": "gulp",
@@ -14,7 +14,6 @@
   },
   "author": "Robert May",
   "homepage": "https://phyff.com",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
