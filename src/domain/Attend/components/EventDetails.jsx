@@ -30,7 +30,7 @@ const EventDetails = () => {
                   className="card card-icon-3 card-body h-100 justify-content-between"
                   data-aos="fade-up"
                   data-aos-delay="100"
-                >
+                  >
                   <div className="icon-round mb-3 mb-md-4 bg-primary-2">
                     <Svg
                       className="icon icon-lg bg-primary-2"
