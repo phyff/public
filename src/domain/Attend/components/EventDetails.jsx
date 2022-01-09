@@ -124,7 +124,7 @@ const EventDetails = () => {
                         <a href={`https://www.google.com/maps/search/?api=1&query=${address}`} target="_blank">
                           Germantown Friends School, located in Philadelphia, Pennsylvania
                         </a>.
-                        Due to COVID restrictions, this year's event will be all virtual.
+                          We plan for the festival to happen in person, but depending on COVID this is subject to change.
                       </p>
                     ) : (
                       <p>

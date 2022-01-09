@@ -5,7 +5,7 @@ const attendHeader = {
   image: attend,
   color: 'bg-primary',
   dividerColor: 'bg-primary-3',
-  caption: 'The 2022 Festival will take place on Saturday, February 26 on the campus of Germantown Friends School. The Fest is a great opportunity to make connections or just chat with local filmmakers and similarly passionate students.',
+  caption: 'The 2022 Festival will take place on Saturday, February 26. While we plan for the festival to be in person on the Germantown Friends School Campus, this is subject to change depending on the COVID situation. The Fest is a great opportunity to make connections or just chat with local filmmakers and similarly passionate students.',
   decorationStyle: 1,
   decoColors: {
     primary: 'bg-primary-alt',

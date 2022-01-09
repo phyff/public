@@ -18,9 +18,15 @@ const Schedule = ({ year }) => {
   const displayIfEmpty = isLoaded && scheduleIsLoaded
     ? <NoWorkshops />
     : (
-      <div className="min-vh-70 h-100 w-100 p-0 m-0 border-0 card card-body justify-content-center">
-        <Loading className="ml-auto mr-auto" />
+      // <div className="min-vh-70 h-100 w-100 p-0 m-0 border-0 card card-body justify-content-center">
+      //   <b>The schedule for this years film festival has not yet been determined, check back later.</b>
+      //   <Loading className="ml-auto mr-auto" />
+      // </div>
+      <div >
+        <b>The schedule for this years film festival has not yet been determined, check back later.</b>
       </div>
+
+  Ml-auto and mx-auto
     );
 
   return (

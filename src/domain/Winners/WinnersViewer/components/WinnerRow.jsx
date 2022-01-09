@@ -9,7 +9,7 @@ import winnerType from '../../../../types/winner';
 
 const WinnerRow = ({ winner, delay }) => {
   const {
-    title, director, local, place, url, specialAward,
+    title, director, local, place, url, specialAward, gfs,
   } = winner || {};
   const placeColors = ['gold', 'silver', 'darkgoldenrod'];
 
@@ -49,6 +49,20 @@ const WinnerRow = ({ winner, delay }) => {
             )}
           >
             <span className="badge badge-pill badge-primary-2 m-1">Local</span>
+          </OverlayTrigger>
+          )}
+          {gfs && (
+          <OverlayTrigger
+            placement="right"
+            delay={{ show: 400, hide: 250 }}
+            overlay={(props) => (
+              <Tooltip {...props}>
+                {/* eslint-disable-next-line max-len */}
+                <strong>{title}</strong> was created by a filmmaker attending Germantown Friends School.
+              </Tooltip>
+            )}
+          >
+            <span className="badge badge-pill badge-warning m-1">gfs</span>
           </OverlayTrigger>
           )}
           {specialAward && (
