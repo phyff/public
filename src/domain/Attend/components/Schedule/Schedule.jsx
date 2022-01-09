@@ -22,11 +22,9 @@ const Schedule = ({ year }) => {
       //   <b>The schedule for this years film festival has not yet been determined, check back later.</b>
       //   <Loading className="ml-auto mr-auto" />
       // </div>
-      <div >
+      <div>
         <b>The schedule for this years film festival has not yet been determined, check back later.</b>
       </div>
-
-  Ml-auto and mx-auto
     );
 
   return (
