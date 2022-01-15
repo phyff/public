@@ -5,12 +5,14 @@ import aboutHeader from '../../data/aboutHeader';
 import Team from './components/Team';
 import Mission from './components/Mission';
 import Description from './components/Description';
+import FoundersNote from './components/FoundersNote';
 
 const About = () => (
   <>
     <Header data={aboutHeader} />
     <Mission />
     <Description />
+    <FoundersNote />
     <Team />
   </>
 );
