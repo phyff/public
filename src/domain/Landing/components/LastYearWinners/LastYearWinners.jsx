@@ -16,7 +16,7 @@ const LastYearWinners = () => {
       <section className="has-divider bg-primary-alt">
         <Container>
           <div className="justify-content-center">
-            <h1 className="mb-2">2021 Winners</h1>
+            <h1 className="mb-2">{year} Winners</h1>
             <WinnersYearPage year={year} compact navLeft />
           </div>
         </Container>
