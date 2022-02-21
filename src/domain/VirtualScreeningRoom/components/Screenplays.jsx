@@ -16,10 +16,10 @@ const Screenplays = function Screenplays() {
               <h2 className="h1 mb-4">Screenplays</h2>
               <hr />
               <p className="h3"><a href="https://issuu.com/phillyfilmfest/docs/_don_t_let_sleeping_dogs_lie.pdfscript">(Don't) Let Sleeping Dogs Lie by Laura Atanasov </a></p>
-              {/*<IFrame*/}
-              {/*  title="A Day with Payne"*/}
-              {/*  src="//e.issuu.com/embed.html?backgroundColor=%23bbd6d8&backgroundColorFullscreen=%23bbd6d8&d=adaywithpaynedraft3&hideIssuuLogo=true&u=germantownfds"*/}
-              {/*/>*/}
+              {/* <IFrame */}
+              {/*  title="A Day with Payne" */}
+              {/*  src="//e.issuu.com/embed.html?backgroundColor=%23bbd6d8&backgroundColorFullscreen=%23bbd6d8&d=adaywithpaynedraft3&hideIssuuLogo=true&u=germantownfds" */}
+              {/* /> */}
               <p className="h3"><a href="https://issuu.com/phillyfilmfest/docs/kofichroniclespilot">Kofi Chronicles by Kashvi Ramani </a></p>
               <p className="h3"><a href="https://issuu.com/phillyfilmfest/docs/bottledup">Bottled Up by Lex Jimenez </a></p>
             </div>
