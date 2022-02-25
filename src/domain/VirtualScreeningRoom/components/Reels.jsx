@@ -24,15 +24,15 @@ const Reels = function Reels() {
                 allow="autoplay; fullscreen; picture-in-picture"
                 frameBorder="0"
               />
-              {/* <p className="h2">Experimental Reel</p> */}
-              {/* <IFrame */}
-              {/*  title="Experimental Reel" */}
-              {/*  src="https://player.vimeo.com/video/516741852" */}
-              {/*  width="640" */}
-              {/*  height="360" */}
-              {/*  allow="autoplay; fullscreen; picture-in-picture" */}
-              {/*  frameBorder="0" */}
-              {/* /> */}
+              <p className="h2">Experimental Reel</p>
+              <IFrame
+                title="Experimental Reel"
+                src="https://player.vimeo.com/video/681697121?h=997049ecca&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                width="640"
+                height="360"
+                allow="autoplay; fullscreen; picture-in-picture"
+                frameBorder="0"
+              />
               <p className="h2">Documentary Reel</p>
               <IFrame
                 title="Documentary Reel"
