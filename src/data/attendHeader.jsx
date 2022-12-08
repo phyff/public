@@ -9,8 +9,6 @@ const attendHeader = {
   caption: () => (
     <div>
       Join us for the fifth annual Philadelphia Youth Film Festival!
-      Because of ongoing COVID safety protocols, our festival will not be open to the public this year.
-      But, don't dismay!  We'd like to invite you to participate in these key components from the comfort of your own home:
       <br /><br />
       <strong>- FILMS!  </strong> - You'll receive a link the week prior to the festival that will enable you to screen the entire collection of this year's selected films.
       <br /><br />
@@ -19,7 +17,7 @@ const attendHeader = {
       <strong>- FILMMAKER TALKBACK SESSION! </strong>- You'll receive the link to join us for a virtual Q&A with some of our finalists.
       <br /><br />
       This free event is open to all high school students.
-      The Festival is hosted by Germantown Friends School and will take place on Saturday, February 26, 2022.
+      The Festival is hosted by Germantown Friends School and will take place on Saturday, February 25, 2023.
       We will contact you closer to the event with a confirmation of exact start times and links to the webinar,
       zoom and any additional information and updates on ways that you can participate in the event!
     </div>
