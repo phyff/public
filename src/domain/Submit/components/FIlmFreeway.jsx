@@ -17,7 +17,7 @@ const FilmFreeway = ({ submissionDeadline }) => {
         <Row className="justify-content-around o-hidden o-lg-visible mb-5">
           <Col xl={5} md={6} className="mb-4 mb-md-0" data-aos="fade">
             <h3 className="h1">{submissionsOpen ? 'Submissions Are Open!' : 'Submissions Are Closed'}</h3>
-            <p className="lead">Submit your film by October 27th, 2021.
+            <p className="lead">Submit your film by November 1st, 2022.
             </p>
             <a href="https://filmfreeway.com/phyff" className="lead hover-arrow">Visit our FilmFreeway
               page
