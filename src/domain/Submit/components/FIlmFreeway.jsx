@@ -1,5 +1,4 @@
 import React from 'react';
-import moment from 'moment';
 import {
   Button, Card, Col, Container, Row,
 } from 'react-bootstrap';
@@ -18,7 +17,8 @@ const FilmFreeway = ({ submissionDeadline }) => {
         <Row className="justify-content-around o-hidden o-lg-visible mb-5">
           <Col xl={5} md={6} className="mb-4 mb-md-0" data-aos="fade">
             <h3 className="h1">{submissionsOpen ? 'Submissions Are Open!' : 'Submissions Are Closed'}</h3>
-            <p className="lead">{submissionsOpen ? 'Submit your film by ${moment(submissionDeadline).format(\'dddd, MMMM Do YYYY\')' : 'Submissions were due ${moment(submissionDeadline).format(\'dddd, MMMM Do YYYY\')'}
+            <p className="lead">Submit your film by October 27th, 2021.
+            </p>
             <a href="https://filmfreeway.com/phyff" className="lead hover-arrow">Visit our FilmFreeway
               page
             </a>
