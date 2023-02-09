@@ -17,7 +17,7 @@ import useEventInfo from '../../../hooks/useEventInfo';
 
 const EventDetails = () => {
   const { date, address } = useEventInfo();
-  const covid = true;
+  const covid = false;
 
   return (
     <section className="bg-primary has-divider">
@@ -30,7 +30,7 @@ const EventDetails = () => {
                   className="card card-icon-3 card-body h-100 justify-content-between"
                   data-aos="fade-up"
                   data-aos-delay="100"
-                  >
+                >
                   <div className="icon-round mb-3 mb-md-4 bg-primary-2">
                     <Svg
                       className="icon icon-lg bg-primary-2"
@@ -88,7 +88,7 @@ const EventDetails = () => {
                     <strong>{moment(date?.toDate()).format('dddd, MMMM Do YYYY')}</strong>&nbsp;
                     from&nbsp;
                     <strong>11:00 am to 5:00 pm EST</strong>&nbsp;
-                     (Philadelphia). You can arrive and leave at any time. We
+                    (Philadelphia). You can arrive and leave at any time. We
                     recommend staying for the entire event; there are workshops and screenings
                     scheduled throughout the day!
                   </p>
@@ -124,7 +124,7 @@ const EventDetails = () => {
                         <a href={`https://www.google.com/maps/search/?api=1&query=${address}`} target="_blank">
                           Germantown Friends School, located in Philadelphia, Pennsylvania
                         </a>.
-                          We plan for the festival to happen in person, but depending on COVID this is subject to change.
+                        We plan for the festival to happen in person, but depending on COVID this is subject to change.
                       </p>
                     ) : (
                       <p>

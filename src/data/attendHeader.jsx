@@ -10,7 +10,7 @@ const attendHeader = {
     <div>
       Join us for the sixth annual Philadelphia Youth Film Festival, hosted on Saturday, February 25, 2023 from 11am to 6pm EST.
       We're pleased to announce that Matt Grady will be serving as this year's keynote speaker. Mr. Grady is a producer, actor, and editor from New York City, as well as the founder of Factory 25, an independent film distribution company housing conceptually provocative narratives and documentaries. His mission is to expose the world to under-the-radar films, music, and other curiosities theatrically and digitally. In 2014, Mr. Grady was named "One of the Most Influential People in Brooklyn Culture” and has been called "one of the most important curatorial voices of new, independent American films." We are excited to have him speak at our festival!
-
+      <br /><br />
       <strong>FILMS!</strong> - You'll receive a link the week prior to the festival that will enable you to screen the entire collection of this year's selected films. In addition, winning films will be screened in person at our event in Philadelphia on February 25.
       <br /><br />
       <strong>KEYNOTE SPEAKER</strong> - Join us for our keynote presentation with producer, actor, and editor MATT GRADY.
