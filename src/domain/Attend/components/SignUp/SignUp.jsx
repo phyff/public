@@ -1,17 +1,16 @@
-import React from 'react';
-import {
-  Col, Container, Row,
-} from 'react-bootstrap';
-import Svg from '../../../../components/Svg';
-import divider from '../../../../assets/img/dividers/divider-5.svg';
-import blob1 from '../../../../assets/img/decorations/deco-blob-1.svg';
-import dots5 from '../../../../assets/img/decorations/deco-dots-5.svg';
-import useEventInfo from '../../../../hooks/useEventInfo';
-import Loading from '../../../../components/Loading';
-import signIn2 from '../../../../assets/img/content/sign-in2.jpg';
-import signIn from '../../../../assets/img/content/sign-in.jpg';
-import poster4 from '../../../../assets/img/content/phyff-poster-4.png';
-import SignInCollage from './SignInCollage';
+import React from "react";
+import { Button, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import Svg from "../../../../components/Svg";
+import divider from "../../../../assets/img/dividers/divider-5.svg";
+import blob1 from "../../../../assets/img/decorations/deco-blob-1.svg";
+import dots5 from "../../../../assets/img/decorations/deco-dots-5.svg";
+import useEventInfo from "../../../../hooks/useEventInfo";
+import Loading from "../../../../components/Loading";
+import signIn2 from "../../../../assets/img/content/sign-in2.jpg";
+import signIn from "../../../../assets/img/content/sign-in.jpg";
+import poster4 from "../../../../assets/img/content/phyff-poster-4.png";
+import SignInCollage from "./SignInCollage";
 
 const SignUp = () => {
   const { signup, isLoaded } = useEventInfo();
@@ -21,48 +20,44 @@ const SignUp = () => {
       <Container>
         <Row>
           <Col md={12}>
-            <Row className="justify-content-around o-hidden o-lg-visible mb-5 text-light">
-              <Col xl={4} md={4} className="mb-4 mb-md-0 layer-2" data-aos="fade">
+            <Row className="align-items-center justify-content-center o-hidden o-lg-visible mb-5 text-light">
+              <Col
+                xl={4}
+                md={4}
+                className="mb-4 mb-md-0 layer-2"
+                data-aos="fade"
+              >
                 <h3 className="h1 mb-4">Sign Up</h3>
-                <p className="lead">Sign up for the Philadelphia Youth Film
-                  Festival using the attached registration form. You can only
-                  fill out this form once.
+                <p className="lead">
+                  Sign up for the Philadelphia Youth Film Festival using the
+                  attached registration form. You can only fill out this form
+                  once.
                 </p>
-                {isLoaded && (
-                  signup ? (
-                    <a href={signup} className="lead hover-arrow">
-                      Open in Google Forms
-                    </a>
-                  )
-                    : (
-                      <p className="lead font-weight-bold">
-                        There currently isn't a sign-up form available. Check back soon!
-                      </p>
-                    )
-                )}
-              </Col>
-              <Col xl={6} md={6} className="mb-lg-n7 layer-3" data-aos="fade-left">
-                {/* eslint-disable-next-line no-nested-ternary */}
-                {isLoaded ? (
-                  signup ? (
-                    <iframe
-                      title="Sign Up Form"
-                      src={signup}
-                      className="min-vh-70 h-100 w-100 p-0 m-0 border-0 card card-body"
-                    />
+                {isLoaded &&
+                  (signup ? (
+                    <Link href={signup}>
+                      <Button size="lg" className="btn-primary-2">
+                        Sign up
+                      </Button>
+                    </Link>
                   ) : (
-                    <div
-                      className="min-vh-70 h-100 w-100 p-0 m-0"
-                    >
-                      <SignInCollage />
-                    </div>
-                  )
-                )
-                  : (
-                    <div className="min-vh-70 h-100 w-100 p-0 m-0 border-0 card card-body justify-content-center">
-                      <Loading className="ml-auto mr-auto" />
-                    </div>
-                  )}
+                    <p className="lead font-weight-bold">
+                      There currently isn't a sign-up form available. Check back
+                      soon!
+                    </p>
+                  ))}
+              </Col>
+              <Col
+                xl={6}
+                md={6}
+                className="mb-lg-n7 layer-3"
+                data-aos="fade-left"
+              >
+                {isLoaded && !signup && (
+                  <div className="min-vh-70 h-100 w-100 p-0 m-0">
+                    <SignInCollage />
+                  </div>
+                )}
               </Col>
               <div>
                 <div className="decoration top left scale-1 d-none mx-5 my-5 d-md-block">
@@ -85,7 +80,11 @@ const SignUp = () => {
         </Row>
       </Container>
       <div className="divider">
-        <Svg className="bg-primary flip-x" src={divider} alt="divider graphic" />
+        <Svg
+          className="bg-primary flip-x"
+          src={divider}
+          alt="divider graphic"
+        />
       </div>
     </section>
   );
