@@ -4,7 +4,7 @@ const screeningRoomHeader = {
   title: 'Virtual Screening Room',
   image: awards,
   color: 'bg-primary-2',
-  caption: 'Official Winners and Selections for the Philadelphia Youth Film Festival 2022.',
+  caption: 'Official Winners and Selections for the Philadelphia Youth Film Festival 2023.',
   dividerColor: 'bg-white',
   decoColors: {
     primary: 'bg-primary',
