@@ -1,16 +1,13 @@
-import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import Svg from "../../../../components/Svg";
-import divider from "../../../../assets/img/dividers/divider-5.svg";
-import blob1 from "../../../../assets/img/decorations/deco-blob-1.svg";
-import dots5 from "../../../../assets/img/decorations/deco-dots-5.svg";
-import useEventInfo from "../../../../hooks/useEventInfo";
-import Loading from "../../../../components/Loading";
-import signIn2 from "../../../../assets/img/content/sign-in2.jpg";
-import signIn from "../../../../assets/img/content/sign-in.jpg";
-import poster4 from "../../../../assets/img/content/phyff-poster-4.png";
-import SignInCollage from "./SignInCollage";
+import React from 'react';
+import {
+  Button, Col, Container, Row,
+} from 'react-bootstrap';
+import Svg from '../../../../components/Svg';
+import divider from '../../../../assets/img/dividers/divider-5.svg';
+import blob1 from '../../../../assets/img/decorations/deco-blob-1.svg';
+import dots5 from '../../../../assets/img/decorations/deco-dots-5.svg';
+import useEventInfo from '../../../../hooks/useEventInfo';
+import SignInCollage from './SignInCollage';
 
 const SignUp = () => {
   const { signup, isLoaded } = useEventInfo();
@@ -33,13 +30,13 @@ const SignUp = () => {
                   attached registration form. You can only fill out this form
                   once.
                 </p>
-                {isLoaded &&
-                  (signup ? (
-                    <Link href={signup}>
+                {isLoaded
+                  && (signup ? (
+                    <a href={signup}>
                       <Button size="lg" className="btn-primary-2">
                         Sign up
                       </Button>
-                    </Link>
+                    </a>
                   ) : (
                     <p className="lead font-weight-bold">
                       There currently isn't a sign-up form available. Check back

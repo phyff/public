@@ -10,7 +10,6 @@ const useEventInfo = () => {
     db.collection('event')
       .doc('info').get()
       .then((doc) => {
-        console.log(doc.data());
         if (doc.exists) {
           setInfo({
             ...doc.data(),
