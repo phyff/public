@@ -15,13 +15,21 @@ const Screenplays = function Screenplays() {
             <div className="col-xl-10">
               <h2 className="h1 mb-4">Screenplays</h2>
               <hr />
-              <p className="h3"><a href="https://issuu.com/phillyfilmfest/docs/_don_t_let_sleeping_dogs_lie.pdfscript">(Don't) Let Sleeping Dogs Lie by Laura Atanasov </a></p>
-              {/* <IFrame */}
-              {/*  title="A Day with Payne" */}
-              {/*  src="//e.issuu.com/embed.html?backgroundColor=%23bbd6d8&backgroundColorFullscreen=%23bbd6d8&d=adaywithpaynedraft3&hideIssuuLogo=true&u=germantownfds" */}
-              {/* /> */}
-              <p className="h3"><a href="https://issuu.com/phillyfilmfest/docs/kofichroniclespilot">Kofi Chronicles by Kashvi Ramani </a></p>
-              <p className="h3"><a href="https://issuu.com/phillyfilmfest/docs/bottledup">Bottled Up by Lex Jimenez </a></p>
+              <p className="h3">Marathon</p>
+              <IFrame title = "Marathon" src="https://e.issuu.com/embed.html?d=2marathon_script&hideIssuuLogo=true&u=germantownfds">
+              <p className="h3">A Little Bit of Trouble Making</p>
+              <IFrame title = "A Little Bit of Trouble Making" src="https://e.issuu.com/embed.html?d=1alittlebitoftroublemakingscript&hideIssuuLogo=true&u=germantownfds"></iframe>
+              <p className="h3">Solicitude</p>
+              <IFrame title = "Solicitude" src="https://e.issuu.com/embed.html?d=3scriptsolicitude2&hideIssuuLogo=true&u=germantownfds">
+              <p className="h3">The Death of a Moth</p>
+              <IFrame title = "The Death of a Moth" src="https://e.issuu.com/embed.html?d=4scriptthedeathofamoth21&hideIssuuLogo=true&u=germantownfds">
+              <p className="h3">Sole Searching</p>
+              <IFrame title = "Sole Searching" src="https://e.issuu.com/embed.html?d=6solesearching_script&hideIssuuLogo=true&u=germantownfds">
+              <p className="h3">Silent Night</p>
+              <IFrame title="Silent Night" src="https://e.issuu.com/embed.html?d=5silentnight_script&hideIssuuLogo=true&u=germantownfds" />
+              <p className="h3">Sunflowers</p>
+              <IFrame title="Sunflowers" src="https://e.issuu.com/embed.html?d=7sunflowers_script&hideIssuuLogo=true&u=germantownfds" />
+ 
             </div>
           </div>
         </div>
