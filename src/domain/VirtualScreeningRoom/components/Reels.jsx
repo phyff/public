@@ -18,7 +18,7 @@ const Reels = function Reels() {
               <p className="h2">Narrative Reel</p>
               <IFrame
                 title="Narrative Reel"
-                src="https://player.vimeo.com/video/680168268?h=7651ebf35e"
+                src="https://player.vimeo.com/video/800595617?h=730420ef20&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                 width="640"
                 height="360"
                 allow="autoplay; fullscreen; picture-in-picture"
@@ -26,8 +26,8 @@ const Reels = function Reels() {
               />
               <p className="h2">Experimental Reel</p>
               <IFrame
-                title="Experimental Reel"
-                src="https://player.vimeo.com/video/681697121?h=997049ecca&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                title="Documentary Reel"
+                src="https://player.vimeo.com/video/800596476?h=88e52cd01d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                 width="640"
                 height="360"
                 allow="autoplay; fullscreen; picture-in-picture"
@@ -35,8 +35,8 @@ const Reels = function Reels() {
               />
               <p className="h2">Documentary Reel</p>
               <IFrame
-                title="Documentary Reel"
-                src="https://player.vimeo.com/video/680168181?h=18bbd02471&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                title="Experimental Reel"
+                src="https://player.vimeo.com/video/800596861?h=c0dc98b80b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                 width="640"
                 height="360"
                 allow="autoplay; fullscreen; picture-in-picture"
